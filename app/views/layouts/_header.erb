@@ -1,20 +1,39 @@
-<div id="header-wrap">
-  <div id="header-container">
-    <div id="header">
-      <h1>CourseX</h1>
-      <ul>
-        <% if current_user %>
-            <div class="logged_in">
-            |Logged in as <%= current_user.email %>|
-             <%= link_to "Log out", logout_path %>
-            </div>
-        <% else %>
-            <%= link_to "Sign up", signup_path,{ :class => "link_to"} %> OR
-            <%= link_to "Log in", login_path,{:class => "link_to"}  %>.
+<header>
 
+  <div class="header">
+    <div id="logo" class="logo">
+      <a href="/" title="CourseX"><img src="/images/logo_small.png" alt="TouristEye"/></a>
+    </div>
 
-        <% end %>
+    <nav>
+       <ul>
+        <li class="home ">
+        </li>
+        <li><%=link_to "Home", root_path  %></li>
+        <li><%=link_to "Contact Us", root_path  %></li>
+        <li><%=link_to "Who We Are", root_path  %></li>
+        <li><%=link_to "What we Do", root_path  %> </li>
+         <li><%=link_to "Our Courses", root_path  %> </li>
+         <li><%=link_to "Affliliates", root_path  %> </li>
       </ul>
+    </nav>
+
+    <div id="user-block">
+      <div id="user-menu">
+        <% if current_user %>
+            <div class="home">
+              Welcome <%= current_user.email %>|
+              <%= link_to "Log out", logout_path %>
+            </div>
+            <% else %>
+         <%= link_to "Sign In", login_path %>
+        <span class="sign-up-separator">or</span>
+        <a class="btn-small-yellow bg-green" id="singup" href="/signup">
+         <span> Sign up</span>
+          <% end %>
+        </a>
+      </div>
     </div>
   </div>
-</div>
+</header>
+<hr  />
