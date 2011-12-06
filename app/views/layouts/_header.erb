@@ -26,7 +26,9 @@
               <%= link_to "Log out", logout_path %>
             </div>
             <% else %>
-         <%= link_to "Sign In", login_path %>
+            <a class="btn-small-yellow bg-green" id="singup" href="/signin">
+              <span> Sign in</span>
+        </a>
         <span class="sign-up-separator">or</span>
         <a class="btn-small-yellow bg-green" id="singup" href="/signup">
          <span> Sign up</span>
