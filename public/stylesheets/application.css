@@ -87,7 +87,7 @@ menu, nav, section, summary, time, mark, audio, video {
 }
 
 .feedback{
-    background:url("/images/feedback_tab_white.png") no-repeat scroll 50% 50% #334;
+    background:url("/images/feedback_tab_white.png") no-repeat scroll 50% 50% #6ca930;
     display:block;
     height:90px;
     line-height:0;
@@ -99,6 +99,7 @@ menu, nav, section, summary, time, mark, audio, video {
     top:50%;
     width:22px;
 }
+
 
 
 #header ul li a:hover {
