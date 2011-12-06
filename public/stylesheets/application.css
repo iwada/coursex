@@ -115,9 +115,9 @@ menu, nav, section, summary, time, mark, audio, video {
 
 #footer-container {
     height: 40px;
-    background: url(../images/footer-bg.png) repeat-x left bottom;
-    text-align: center;
+   text-align: center;
     border-top: solid 1px #00395a;
+
 }
 
 #footer {
@@ -431,6 +431,9 @@ a {
 header {
     background: url("/images/bg-info.png") repeat-x;
 
+}
+footer{
+    background: url("/images/bg-info.png") repeat-x;
 }
 
 header .header {
