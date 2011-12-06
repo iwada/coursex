@@ -429,7 +429,7 @@ a {
 
 
 header {
-   background-color: maroon;
+    background: url("/images/bg-info.png") repeat-x;
 
 }
 
