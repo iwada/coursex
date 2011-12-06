@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41934c2c-d224-404e-954e-c35f7923737e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/pages/home.html.erb" afterPath="$PROJECT_DIR$/app/views/pages/home.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sessions/new.html.erb" afterPath="$PROJECT_DIR$/app/views/sessions/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/user_mailer/reset_password_email.text.erb" afterPath="$PROJECT_DIR$/app/views/user_mailer/reset_password_email.text.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/application.css" afterPath="$PROJECT_DIR$/public/stylesheets/application.css" />
     </list>
     <ignored path="coursex.iws" />
@@ -31,7 +27,7 @@
       <file leaf-file-name="_header.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/_header.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="16" selection-start="26" selection-end="26" vertical-scroll-proportion="-0.65384614">
+            <state line="2" column="17" selection-start="27" selection-end="27" vertical-scroll-proportion="-0.65384614">
               <folding />
             </state>
           </provider>
@@ -40,7 +36,7 @@
       <file leaf-file-name="application.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/stylesheets/application.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="431" column="28" selection-start="10184" selection-end="10184" vertical-scroll-proportion="0.23800738">
+            <state line="431" column="27" selection-start="10183" selection-end="10183" vertical-scroll-proportion="0.20664206">
               <folding />
             </state>
           </provider>
@@ -775,14 +771,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/_header.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="16" selection-start="26" selection-end="26" vertical-scroll-proportion="-0.65384614">
+        <state line="2" column="17" selection-start="27" selection-end="27" vertical-scroll-proportion="-0.65384614">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/application.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="431" column="28" selection-start="10184" selection-end="10184" vertical-scroll-proportion="0.23800738">
+        <state line="431" column="27" selection-start="10183" selection-end="10183" vertical-scroll-proportion="0.20664206">
           <folding />
         </state>
       </provider>
