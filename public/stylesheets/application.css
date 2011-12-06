@@ -429,7 +429,9 @@ a {
 
 
 header {
-    background: url("/images/bg-info.png") repeat-x; }
+   background-color: orange;
+
+}
 
 header .header {
     width: 1000px;
