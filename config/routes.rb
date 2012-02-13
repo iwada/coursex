@@ -12,6 +12,7 @@ Coursex::Application.routes.draw do
   resources :users
   resources :sessions
   resources :password_resets
+  resources :pages
 
 
 
@@ -24,6 +25,7 @@ Coursex::Application.routes.draw do
   get "pages/contact"
 
   match '/contact' , :to => 'pages#contact'
+   match '/help' ,     :to => 'pages#help'
 
 
   root :to=> 'pages#home'
