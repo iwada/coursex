@@ -15,7 +15,9 @@
         <li><%=link_to "What we Do", root_path  %> </li>
          <li><%=link_to "Our Courses", root_path  %> </li>
          <li><%=link_to "Blog", "http://coursex.posterous.com"  %> </li>
+         <% if logged_in? %>
           <li><%=link_to "Documentation", help_path  %> </li>
+             <% end %>
          </ul>
     </nav>
 
@@ -23,7 +25,7 @@
       <div id="user-menu">
         <% if current_user %>
             <div class="home">
-              Welcome <%= current_user.email %>|
+              <%= current_user.email %>|
               <%= link_to "Log out", logout_path %>
             </div>
             <% else %>
