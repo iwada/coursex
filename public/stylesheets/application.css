@@ -22,14 +22,45 @@ menu, nav, section, summary, time, mark, audio, video {
     background: transparent; }
 
 
+.active {
+	background: #6ca930;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    padding: 4px 8px 4px 8px;
+    list-style: none;
+    color:#fff;
+	font-weight:bold;
+	text-decoration:none;
+      }
+
+.signup{
+    -webkit-background-clip: padding-box;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-box-shadow: 0px 1px 0px 0px #acd163;
+    -moz-box-shadow: 0px 1px 0px 0px #acd163;
+    box-shadow: 0px 1px 0px 0px #acd163;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border: 1px solid #E09A1A;
+    background: -moz-linear-gradient(top, #fcee64 0%, #fab62c 100%);
+    /* Firefox */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fcee64), color-stop(100%, #fab62c));
+    /* Webkit */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcee64', endColorstr='#fab62c',GradientType=0 );
+    /* IE Filter */
+
+}
+
 #header-wrap {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
 }
-
-
 
 #header-container {
     height: 80px;
@@ -86,6 +117,31 @@ menu, nav, section, summary, time, mark, audio, video {
     color: #6ca930;
 }
 
+.Work on this Later for the admin Box{
+
+    display:block;
+    height:30px;
+    line-height:0;
+    padding:5px;
+    position:fixed;
+    right:0;
+    left :40%;
+
+/*left:0;*/
+    text-indent:-99999px;
+    top:7%;
+    width:200px;
+
+    -webkit-box-shadow: 0px 1px 0px 0px #acd163;
+    -moz-box-shadow: 0px 1px 0px 0px #acd163;
+    box-shadow: 0px 1px 0px 0px #acd163;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border: 1px solid #E09A1A;
+    background: -moz-linear-gradient(top, #fcee64 0%, #fab62c 100%);
+
+}
 .feedback{
     background:url("/images/feedback_tab_white.png") no-repeat scroll 50% 50% #6ca930;
     display:block;
@@ -94,11 +150,13 @@ menu, nav, section, summary, time, mark, audio, video {
     padding:5px;
     position:fixed;
     right:0;
+
 /*left:0;*/
     text-indent:-99999px;
     top:50%;
     width:22px;
 }
+
 
 
 
@@ -296,6 +354,7 @@ a, a:active, a:visited {
 
 a:hover {
     color: #4380BC; }
+
 
 ul, ol {
     margin-left: 1.8em; }

@@ -9,14 +9,14 @@
        <ul>
         <li class="home ">
         </li>
-        <li><%=link_to "Home", root_path  %></li>
-        <li><%=link_to "Contact Us", root_path  %></li>
-        <li><%=link_to "Who We Are", root_path  %></li>
-        <li><%=link_to "What we Do", root_path  %> </li>
-         <li><%=link_to "Our Courses", root_path  %> </li>
-         <li><%=link_to "Blog", "http://coursex.posterous.com"  %> </li>
+        <li ><%=link_to ".Home",  root_path ,:class => is_active?("home")%></li>
+        <li><%=link_to ".Contact Us ", contact_path,:class => is_active?("contact")  %></li>
+        <li><%=link_to ".Who We Are ", whoweare_path,:class => is_active?("whoweare") %></li>
+        <li><%=link_to ".What we Do ", whatwedo_path,:class => is_active?("whatwedo")  %> </li>
+         <li><%=link_to ".Our Courses ", courses_path,:class => is_active?("courses")  %> </li>
+         <li><%=link_to ".Blog", "http://coursex.posterous.com"  %> </li>
          <% if logged_in? %>
-          <li><%=link_to "Documentation", help_path  %> </li>
+          <li><%=link_to "Documentation", help_path ,:class => is_active?("help") %> </li>
              <% end %>
          </ul>
     </nav>

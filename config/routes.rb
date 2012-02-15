@@ -8,11 +8,20 @@ Coursex::Application.routes.draw do
   get "logout" => "sessions#destroy", :as => "logout"
   get "login" => "sessions#new", :as => "login"
   get "signup" => "users#new", :as => "signup"
+  get "help" =>"pages#help" , :as => "help"
+
 
   resources :users
   resources :sessions
   resources :password_resets
   resources :pages
+
+resources :users do
+  member do
+    get :activate
+  end
+end
+
 
 
 
@@ -24,8 +33,14 @@ Coursex::Application.routes.draw do
 
   get "pages/contact"
 
-  match '/contact' , :to => 'pages#contact'
-   match '/help' ,     :to => 'pages#help'
+
+  match '/help' ,     :to => 'pages#help'
+  match '/whoweare'  ,    :to=> 'pages#whoweare'
+  match 'whatwedo' , :to=> 'pages#whatwedo'
+  match '/contact',       :to=>'pages#contact'
+  match '/courses' ,      :to=>'pages#courses'
+
+  #match '/Who We Are', :to=>'pages#whoweare'
 
 
   root :to=> 'pages#home'
