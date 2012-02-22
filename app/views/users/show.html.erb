@@ -1,0 +1,47 @@
+<div class="row-fluid" >
+
+  <%= render 'adminsidebar' %>
+  <div class="span9">
+    <div class="hero-unit">
+
+      <table>
+        <tbody>
+        <tr>
+          <td>User Details</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td >User Name</td>
+          <td ><%= @user.email%></td>
+        </tr>
+
+        <tr>
+          <td >User Name</td>
+          <td ><%= @user.email%></td>
+        </tr>
+
+        <tr>
+          <td >User Name</td>
+          <td ><%= @user.email%></td>
+        </tr>
+
+        <tr>
+          <td >User Name</td>
+          <td ><%= @user.email%></td >
+        </tr>
+
+        <tr>
+          <td >Created on</td>
+          <td  ><%= @user.created_at%></td>
+        </tr>
+        </tbody>
+
+      </table>
+      <%= link_to 'Edit User', edit_user_path(@user),:class=>"btn btn-primary" %>
+      <%= link_to "Delete User" , @user, :method =>:delete,:confirm =>"You Sure?",
+                  :title => "Delete {@user.email}",:class => "btn btn-danger" %>
+      <%= link_to 'Cancel', users_path,:class => "btn" %>
+    </div>
+  </div>
+</div>
+

@@ -1,3 +1,28 @@
-<h1>
-  Welcome, Work in Progress, please do well to leave up your <a href="http://coursex.userecho.com/">feedback</a>
-</h1>
+<div class="container">
+
+<div class="hero-unit">
+  <h1>Idea.tolife!</h1>
+  <p>Welcome</p>
+  <p><a class="btn primary large">Learn more &raquo;</a></p>
+</div>
+  <div class="row">
+    <div class="span5">Ankit where is ContentAnkit whesdsdsdre is Content  Ankit where is Content
+      <p><a class="btn btn-primary btn-large">Learn more &raquo;</a></p>
+     </div>
+
+    <div class="span5">Ankit where is Content   sdsdsdsdsdsdsdsdsd
+      dsdsdAnkit where is Content  Ankit where is Content
+      <p><a class="btn btn-primary btn-large">Learn more &raquo;</a></p>
+    </div>
+
+    <div class="span5">
+      <%= form_tag sessions_path, :class=>"well form-inline" do %>
+          <span class="help-inline">UserName</span>
+          <%= text_field_tag :email, params[:email],:placeholder => 'Email' %>
+          <span class="help-inline">Password</span>
+      <%= password_field_tag :password %>
+      <%= submit_tag "Log in", :class=>"btn btn-success"%>
+      <% end %>
+    </div>
+</div>
+    </div>

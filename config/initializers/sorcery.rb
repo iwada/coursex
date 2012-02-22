@@ -78,7 +78,7 @@ Rails.application.config.sorcery.configure do |config|
   config.user_config do |user|
     # -- core --
     user.username_attribute_names = [:email]                                     # specify username
-    user.reset_password_mailer = UserMailer#addes this                          # attributes, for example:
+    #user.reset_password_mailer = UserMailer#addes this                          # attributes, for example:
     user.user_activation_mailer = UserMailer                                                                                 # [:username, :email].
 
     # user.password_attribute_name = :password                                        # change *virtual* password

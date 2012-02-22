@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  firstname: MyString
+  lastname: MyString
+  sex: MyString
+  level: 1
+  mobile: 1
+
+two:
+  firstname: MyString
+  lastname: MyString
+  sex: MyString
+  level: 1
+  mobile: 1

@@ -2,14 +2,16 @@ source 'http://rubygems.org'
 
 gem 'rails', '3.0.9'
 gem 'sorcery'
-gem 'activeadmin'
 
-gem 'haml'
-
+gem "kaminari"
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'mysql2', '~> 0.2.6'
+#gem 'mysql', '~> 0.2.6'
+gem 'mysql' 
+#gem 'jquery-rails', '>= 1.0.12'
+gem 'jquery-rails'
+gem 'client_side_validations'
 
 group :development do
   gem 'rails-dev-boost', :git => 'git://github.com/thedarkone/rails-dev-boost.git', :require => 'rails_development_boost'

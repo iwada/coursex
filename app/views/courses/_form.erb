@@ -1,0 +1,69 @@
+
+<div class="clearfix">
+  <label>Course Name</label>
+  <div class="input">
+    <%=f.text_field :name %>
+
+  </div>
+
+</div>
+
+
+<div class="clearfix">
+  <label>Course Description</label>
+  <div class="input">
+    <%=f.text_field :description %>
+  </div>
+</div>
+
+
+<div class="clearfix">
+  <label>Course Start Date</label>
+  <div class="input">
+    <%=f.text_field :date_of_course %>
+  </div>
+</div>
+
+<div class="clearfix">
+  <label>Course Time</label>
+  <div class="input">
+    <%=f.text_field :time_of_course %>
+  </div>
+</div>
+
+<div class="clearfix">
+  <label>Course Room Number</label>
+  <div class="input">
+    <%=f.text_field :roomnumber %>
+  </div>
+</div>
+
+  <div class="clearfix">
+    <label>Course Maximum</label>
+    <div class="input">
+      <%=f.text_field :maxallowed%>
+    </div>
+    </div>
+
+  <div class="clearfix">
+    <label>Course Type</label>
+    <div class="input">
+      <%= select( :course, :category_of_course, { "Auto Scheduled" => 0, "Optional" => 1,"Level 1 Course" =>2,"Level 2 Course" => 3,"Compulsory " => 3},{}, {:class=>"text"}) %>
+    </div>
+  </div>
+
+
+  <div class="clearfix">
+    <label>Course Tutor</label>
+    <div class="input">
+      <%= collection_select(:course, :tutor, Trainer.all, :id, :firstname, {:prompt => false},:class=> "text") %>
+
+  </div>
+</div>
+
+<div class="clearfix">
+  <label>Course Duration</label>
+  <div class="input">
+    <%=f.text_field :duration %>
+  </div>
+</div>

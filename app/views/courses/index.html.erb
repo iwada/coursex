@@ -1,0 +1,47 @@
+<div class="row-fluid" >
+
+        <%= render "sidebar" %>
+
+
+  <div class="span9">
+    <div class="hero-unit">
+      <table class="zebra-striped" id="sortTableExample">
+        <thead>
+        <tr>
+          <th>Course Name</th>
+          <th>Course Description</th>
+          <th>Category </th>
+          <th>Tutor</th>
+          <th> Capacity</th>
+          <th></th>
+          <th></th>
+          <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        <% @course.each do |course| %>
+
+            <tr>
+              <td><%= course.name %></td>
+              <td><%= course.description %></td>
+              <td><%= course.category_of_course %></td>
+              <td><%= course.tutor %></td>
+              <td><%= course.maxallowed %></td>
+              <td><%= link_to 'More ',course%></td>
+              <td><%= link_to 'Edit', edit_course_path(course) %></td>
+
+
+
+              <td><%= link_to 'Destroy', course, :confirm => 'Are you sure?',
+                              :method => :delete %></td >
+        <% end %>
+        </tr>
+        </tbody>
+      </table>
+
+    </div>
+  </div>
+  </div>
+<!--</div> Start-->
+
+

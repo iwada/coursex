@@ -1,4 +1,5 @@
 class SessionsController < ApplicationController
+  skip_before_filter :require_login, :except => [:destroy]
   def new
 
   end
@@ -7,7 +8,8 @@ class SessionsController < ApplicationController
   user = login(params[:email], params[:password], params[:remember_me])
   users = User.find_by_email(params[:email])
   if user
-    redirect_back_or_to root_url, :notice => "Logged in!"
+    redirect_back_or_to root_url
+    #redirect_back_or_to root_url, :notice => "Logged in!"
   elsif users != nil && users.activation_state === "pending"
     flash.now.alert = "Your Account is Inactive"
     render :new

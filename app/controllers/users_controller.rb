@@ -1,8 +1,14 @@
 class UsersController < ApplicationController
-  #before_filter :require_login, :only => [:new]
+  skip_before_filter :require_login, :only => [:update, :activate, :create]
+
+  def index
+    @title = "User Listing"
+    @user =  User.order("email").page(params[:page]).per(3)
+  end
+
   def new
     @title = "User Registratoin"
-    @user = User.new;
+    @user = User.new
   end
 
   def create
@@ -14,6 +20,30 @@ class UsersController < ApplicationController
     end
   end
 
+  def show
+    @title = "User Detail"
+    @user = User.find(params[:id])
+  end
+
+  def update
+    @user = User.find(params[:id])
+    if @user.update_attributes(params[:user])
+
+      redirect_to users_path,:notice=>"Update Successfull"
+    else
+      flash[:success] = "Update Attempt Failed"
+      render 'edit'
+    end
+  end
+
+  def edit
+    @user = User.find(params[:id])
+    @title = "#{@user.email}'s Details"
+
+  end
+
+
+
   def activate
   if (@user = User.load_from_activation_token(params[:id]))
     @user.activate!
@@ -22,6 +52,8 @@ class UsersController < ApplicationController
     not_authenticated
   end
   end
+
+
 
 
 

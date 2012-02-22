@@ -1,4 +1,53 @@
 Coursex::Application.routes.draw do
+
+
+
+  get "courses/new"
+
+  get "courses/index"
+
+  get "courses/edit"
+
+  get "courses/update"
+
+  get "courses/destroy"
+
+  get "courses/show"
+
+  get "trainers/new"
+
+  get "trainers/index"
+
+  get "trainers/edit"
+
+  get "trainers/update"
+
+  get "trainers/destroy"
+
+  get "trainers/show"
+
+  get "employees/index"
+
+  get "employees/edit"
+
+  get "employees/update"
+
+  get "employees/destroy"
+
+  get "employees/show"
+
+  get "employee/index"
+
+  get "employee/edit"
+
+  get "employee/update"
+
+  get "employee/destroy"
+
+  get "employee/show"
+
+
+
   get "password_resets/create"
 
   get "password_resets/edit"
@@ -11,19 +60,22 @@ Coursex::Application.routes.draw do
   get "help" =>"pages#help" , :as => "help"
 
 
+
+  resources :employees
   resources :users
   resources :sessions
   resources :password_resets
   resources :pages
+  resources :trainers
+  resources :courses
+
+
 
 resources :users do
   member do
     get :activate
   end
 end
-
-
-
 
   get "sessions/new"
 
@@ -38,7 +90,7 @@ end
   match '/whoweare'  ,    :to=> 'pages#whoweare'
   match 'whatwedo' , :to=> 'pages#whatwedo'
   match '/contact',       :to=>'pages#contact'
-  match '/courses' ,      :to=>'pages#courses'
+  match '/ourcourses' ,      :to=>'pages#ourcourses'
 
   #match '/Who We Are', :to=>'pages#whoweare'
 

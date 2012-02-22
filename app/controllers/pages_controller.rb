@@ -1,5 +1,6 @@
 class PagesController < ApplicationController
- #skip_before_filter :require_login, :only => [:home]
+  skip_before_filter :require_login, :only => [:home, :contact, :help]
+
   def home
     @title = "Home"
   end
@@ -20,7 +21,7 @@ class PagesController < ApplicationController
 
   end
 
-  def courses
+  def ourcourses
 
   end
 
