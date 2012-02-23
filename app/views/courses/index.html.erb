@@ -8,8 +8,9 @@
       <table class="zebra-striped" id="sortTableExample">
         <thead>
         <tr>
-          <th>Course Name</th>
-          <th>Course Description</th>
+          <th> ID</th>
+          <th> Name</th>
+          <th> Description</th>
           <th>Category </th>
           <th>Tutor</th>
           <th> Capacity</th>
@@ -22,6 +23,7 @@
         <% @course.each do |course| %>
 
             <tr>
+               <td>CS-<%= course.id %></td>
               <td><%= course.name %></td>
               <td><%= course.description %></td>
               <td><%= course.category_of_course %></td>
@@ -38,7 +40,7 @@
         </tr>
         </tbody>
       </table>
-
+      <%= paginate @course %>
     </div>
   </div>
   </div>

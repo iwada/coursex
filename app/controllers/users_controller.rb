@@ -20,6 +20,15 @@ class UsersController < ApplicationController
     end
   end
 
+  def destroy
+    if User.find(params[:id]).destroy  #this deletes the Login and not the Employee details
+      redirect_to users_path, :notice => "User Deleted Successfully"
+    else
+      flash.now.alert = "Error Deleting User"
+      render 'index'
+    end
+  end
+
   def show
     @title = "User Detail"
     @user = User.find(params[:id])

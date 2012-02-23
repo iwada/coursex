@@ -2,13 +2,13 @@
   <div class="well sidebar nav">
     <ul class="nav nav-list">
       <li class="nav header"></li>
-      <li class= ><%=link_to "Home", courses_path%></li>
-      <li class= ><%=link_to "New Course", new_course_path%></li>
+      <li class="<%= is_active?("index") %>" ><%=link_to "Home", courses_path%></li>
+      <li class= "<%= is_active?("new") %>"><%=link_to "New Course", new_course_path%></li>
 
       <li class="nav-header"> Recently Registered Courses</li>
-       <li><a href="#"><%=lastthree %></a></li >
+       <li class="<%= is_active?("show") %>"><a href="#"><%=lastthree %></a></li >
        <li class="nav-header">Upcoming Courses</li>
-      <li><a href="#">Course 1</a></li>
+      <li class=><a href="#">Course 1</a></li>
       <li><a href="#">Course 2</a></li>
       <li><a href="#">Course 3 </a></li>
       <li class="nav-header">Most Active Course</li>

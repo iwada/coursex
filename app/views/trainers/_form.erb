@@ -22,7 +22,7 @@
 </div>
 
 <div class="clearfix">
-  <label>Level</label>
+  <label>Teaches:</label>
   <div class="input">
     <%= select( :trainer, :handle, { "Level 1" => 1, "Level 2" => 2},{}, {:class=>"text"}) %>
 
@@ -40,6 +40,6 @@
 <div class="clearfix">
   <label>Date of Joining</label>
   <div class="input">
-    <span class="xlarge uneditable-input"><%= Time.now.to_s %></span>
+    <span class="xlarge uneditable-input"><%= Time.now.strftime("%d %b. %Y") %></span>
   </div>
 </div>

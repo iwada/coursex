@@ -5,9 +5,8 @@ class CoursesController < ApplicationController
   end
 
   def index
-    @title = "User Listing"
-
-    @course =  Course.order("name").page(params[:page]).per(3)
+    @title = "Course Listing"
+    @course =  Course.order("name").page(params[:page]).per(2)
   end
 
   def edit
@@ -29,8 +28,13 @@ class CoursesController < ApplicationController
   end
 
   def destroy
+    if Course.find(params[:id]).destroy
+      redirect_to courses_path, :notice => "Course Deleted Successfully"
+    else
+      flash.now.alert = "Error Deleting Course"
+      render 'index'
+    end
   end
-
   def show
     @title = "Course Detail"
     @course = Course.find(params[:id])

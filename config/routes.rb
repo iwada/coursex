@@ -2,6 +2,16 @@ Coursex::Application.routes.draw do
 
 
 
+  get "branches/index"
+
+  get "branches/edit"
+
+  get "branches/show"
+
+  get "branches/new"
+
+  get "branches/destroy"
+
   get "courses/new"
 
   get "courses/index"

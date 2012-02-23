@@ -1,29 +1,54 @@
-<h1>Sign Up</h1>
+<div class="row-fluid" >
 
-<%= form_for @user, :validate => true do |f| %>
-    <% if @user.errors.any? %>
-        <div class="error_messages">
-          <h2>Form is invalid</h2>
-          <ul>
-            <% for message in @user.errors.full_messages %>
-                <li><%= message %></li>
-            <% end %>
-          </ul>
-        </div>
-    <% end %>
-    <div class="field">
-      <%= f.label :email %>
-      <%= f.text_field :email,:class=>'inputfield' %>
+  <%= render "sidebar" %>
+
+
+  <div class="span9">
+    <div class="hero-unit">
+      <%= form_for @user do |f| %>
+          <% if @user.errors.any? %>
+              <div class="error_messages">
+                <h2>Form is invalid</h2>
+                <ul>
+                  <% for message in @user.errors.full_messages %>
+                      <li><%= message %></li>
+                  <% end %>
+                </ul>
+              </div>
+          <% end %>
+
+          <div class="clearfix">
+            <label>Email</label>
+            <div class="input">
+              <%=f.text_field :email %>
+              <span class="help-inline">We Would be sending an Activation link here</span>
+            </div>
+           </div>
+
+            <div class="clearfix">
+              <label>Password</label>
+              <div class="input">
+                <%=f.password_field :password %>
+                <span class="help-inline">Please Choose Wisely</span>
+              </div>
+              </div>
+
+              <div class="clearfix">
+                <label>Password Confirmation</label>
+                <div class="input">
+                  <%=f.password_field :password_confirmation %>
+              </div>
+              </div>
+
+          <div class="actions">
+            <%= f.submit "Sign Up", :class=> "btn btn-success" %>
+            <%= link_to 'Cancel', root_path,:class => "btn" %>
+          </div>
+      <% end %>
+
     </div>
-    <div class="field">
-      <%= f.label :password %>
-      <%= f.password_field :password %>
-    </div>
-    <div class="field">
-      <%= f.label :password_confirmation %>
-      <%= f.password_field :password_confirmation %>
-    </div>
-    <div class="actions">
-      <%= f.submit :class=> 'signup center' %>
-    </div>
-<% end %>
+  </div>
+  <div class="span5">
+    <p></p>
+  </div>
+</div>

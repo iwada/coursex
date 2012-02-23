@@ -2,7 +2,8 @@
 
 <div class="hero-unit">
   <h1>Idea.tolife!</h1>
-  <p>Welcome</p>
+  <p>Welcome, Apologies, this Page is like this Because One of the Developers, A...T has refused to provide Content. Want to find
+  out Why?, Please contact him at a....@h.....l.com</p>
   <p><a class="btn primary large">Learn more &raquo;</a></p>
 </div>
   <div class="row">
@@ -16,12 +17,15 @@
     </div>
 
     <div class="span5">
-      <%= form_tag sessions_path, :class=>"well form-inline" do %>
-          <span class="help-inline">UserName</span>
+      <%= form_tag sessions_path, :class=>"welllogin form-inline" do %>
+          <span class="help-inline">UserName(Email)</span>
           <%= text_field_tag :email, params[:email],:placeholder => 'Email' %>
           <span class="help-inline">Password</span>
       <%= password_field_tag :password %>
-      <%= submit_tag "Log in", :class=>"btn btn-success"%>
+          <div class="action">
+      <%= submit_tag "Log in", :class=>"btn btn-success btn-large"%>
+      <%= link_to 'Sign Up', new_user_path , :class => "btn btn-primary btn-large" %>
+          </div>
       <% end %>
     </div>
 </div>

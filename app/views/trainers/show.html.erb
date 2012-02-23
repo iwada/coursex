@@ -1,2 +1,68 @@
-<h1>Trainers#show</h1>
-<p>Find me in app/views/trainers/show.html.erb</p>
+<div class="row-fluid" >
+  <%= render "sidebar" %>
+
+  <div class="span9">
+    <div class="hero-unit">
+
+      <table>
+        <tbody>
+
+        <tr>
+          <td>|<%= @trainer.firstname %>'s Details|</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td >ID</td>
+          <td ><%= @trainer.id%></td>
+        </tr>
+
+
+
+
+        <tr>
+          <td >First Name</td>
+          <td ><%= @trainer.firstname%></td>
+        </tr>
+
+        <tr>
+          <td >Last Name</td>
+          <td ><%= @trainer.lastname%></td>
+        </tr>
+
+        <tr>
+          <td >Sex</td>
+          <td ><%= @trainer.sex%></td>
+        </tr>
+
+
+        <tr>
+          <td >Course Handled</td>
+          <td ><%= @trainer.handle%></td>
+        </tr>
+        <tr>
+          <td >Mobile</td>
+          <td ><%= @trainer.mobile%></td >
+        </tr>
+
+        <tr>
+          <td >Email Address</td>
+          <td ><%= current_user.email%></td >
+        </tr>
+
+        <tr>
+          <td >Date of Joining</td>
+          <td ><%= @trainer.created_at.strftime("%d %b. %Y")%></td >
+        </tr>
+
+
+        </tbody>
+
+      </table>
+      <%= link_to 'Edit trainer', edit_trainer_path(@trainer),:class=>"btn btn-primary" %>
+      <%= link_to "Delete trainer" , @trainer, :method =>:delete,:confirm =>"You Sure?",
+                  :title => "Delete {@trainer.name}",:class => "btn btn-danger" %>
+      <%= link_to 'Cancel', trainers_path,:class => "btn" %>
+    </div>
+  </div>
+</div>
+

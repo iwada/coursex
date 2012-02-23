@@ -1,2 +1,44 @@
-<h1>Trainers#index</h1>
-<p>Find me in app/views/trainers/index.html.erb</p>
+<div class="row-fluid" >
+
+  <%= render "sidebar" %>
+
+
+  <div class="span9">
+    <div class="hero-unit">
+      <table class="zebra-striped" id="sortTableExample">
+        <thead>
+        <tr>
+          <th> ID </th>
+          <th> First Name</th>
+          <th>Second Name</th>
+          <th>Handles </th>
+          <th>Sex</th>
+          <th>Mobile</th>
+          <th></th>
+          <th></th>
+          <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        <% @trainer.each do |trainer| %>
+
+            <tr>
+              <td>TR-<%= trainer.id %></td>
+              <td><%= trainer.firstname %></td>
+              <td><%= trainer.lastname %></td>
+              <td><%= trainer.handle%></td>
+              <td><%= trainer.sex %></td>
+              <td><%= trainer.mobile %></td>
+              <td><%= link_to 'More ',trainer%></td>
+              <td><%= link_to 'Edit', edit_trainer_path(trainer) %></td>
+              <td><%= link_to 'Destroy', trainer, :confirm => 'Are you sure?',
+                              :method => :delete %></td >
+        <% end %>
+        </tr>
+        </tbody>
+      </table>
+      <%= paginate @trainer %>
+
+    </div>
+  </div>
+</div>
