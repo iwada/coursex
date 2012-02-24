@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  skip_before_filter :require_login, :only => [:update, :activate, :create]
+  skip_before_filter :require_login, :only => [ :activate, :create,:new] #put here to avoid Login
 
   def index
     @title = "User Listing"

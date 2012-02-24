@@ -78,6 +78,7 @@ Coursex::Application.routes.draw do
   resources :pages
   resources :trainers
   resources :courses
+  resources :branches
 
 
 

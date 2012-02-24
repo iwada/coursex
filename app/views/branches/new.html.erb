@@ -1,2 +1,41 @@
-<h1>Branches#new</h1>
-<p>Find me in app/views/branches/new.html.erb</p>
+<div class="row-fluid" >
+
+  <%= render "sidebar" %>
+
+
+  <div class="span9">
+    <div class="hero-unit">
+      <%= form_for @branch do |f| %>
+
+          <div class="clearfix">
+            <label>Branch Name</label>
+            <div class="input">
+              <%=f.text_field :name %>
+
+            </div>
+          </div>
+
+          <div class="clearfix">
+            <label>Country</label>
+            <div class="input">
+              <%=f.select :country, options_for_select(countries) %>
+
+
+
+            </div>
+          </div>
+
+
+
+          <div class="actions">
+            <%= f.submit "Create Branch", :class=> "btn btn-success" %>
+            <%= link_to 'Cancel', branches_path,:class => "btn" %>
+          </div>
+      <% end %>
+
+    </div>
+  </div>
+  <div class="span5">
+    <p></p>
+  </div>
+</div>

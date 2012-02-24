@@ -18,26 +18,24 @@
         </tr>
         </thead>
         <tbody>
-        <% @branch.each do |employee| %>
+        <% @branch.each do |branch| %>
 
             <tr>
-              <td><%= employee.firstname %></td>
-              <td><%= employee.lastname %></td>
-              <td><%= employee.level %></td>
-              <td><%= employee.sex %></td>
-              <td><%= employee.firstname %></td>
-              <td><%= link_to 'More ',employee%></td>
-              <td><%= link_to 'Edit', edit_employee_path(employee) %></td>
+              <td>BR-<%= branch.id %></td>
+              <td><%= branch.name %></td>
+              <td><%= branch.country%></td>
+              <td><%= link_to 'More ',branch%></td>
+              <td><%= link_to 'Edit', edit_branch_path(branch) %></td>
 
 
 
-              <td><%= link_to 'Destroy', employee, :confirm => 'Are you sure?',
+              <td><%= link_to 'Destroy', branch, :confirm => 'Are you sure?',
                               :method => :delete %></td >
         <% end %>
         </tr>
         </tbody>
       </table>
-      <%= paginate @employee %>
+      <%= paginate @branch %>
 
     </div>
   </div>
