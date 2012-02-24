@@ -1,2 +1,44 @@
-<h1>Branches#index</h1>
-<p>Find me in app/views/branches/index.html.erb</p>
+<div class="row-fluid" >
+
+  <%= render "sidebar" %>
+
+
+  <div class="span9">
+    <div class="hero-unit">
+      <table class="zebra-striped" id="sortTableExample">
+        <thead>
+        <tr>
+          <th> Branch ID:</th>
+          <th>Branch Name</th>
+          <th>Branch Location </th>
+
+          <th></th>
+          <th></th>
+          <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        <% @branch.each do |employee| %>
+
+            <tr>
+              <td><%= employee.firstname %></td>
+              <td><%= employee.lastname %></td>
+              <td><%= employee.level %></td>
+              <td><%= employee.sex %></td>
+              <td><%= employee.firstname %></td>
+              <td><%= link_to 'More ',employee%></td>
+              <td><%= link_to 'Edit', edit_employee_path(employee) %></td>
+
+
+
+              <td><%= link_to 'Destroy', employee, :confirm => 'Are you sure?',
+                              :method => :delete %></td >
+        <% end %>
+        </tr>
+        </tbody>
+      </table>
+      <%= paginate @employee %>
+
+    </div>
+  </div>
+</div>
