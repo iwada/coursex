@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  skip_before_filter :require_login, :only => [ :activate, :create,:new] #put here to avoid Login
+  skip_before_filter :require_login, :only => [ :new,:create,:activate] #put here to avoid Login
 
   def index
     @title = "User Listing"
@@ -56,7 +56,7 @@ class UsersController < ApplicationController
   def activate
   if (@user = User.load_from_activation_token(params[:id]))
     @user.activate!
-    redirect_to(login_path, :notice => 'You have been successfully activated.')
+    redirect_to(root_path, :notice => 'You have been successfully activated.')
   else
     not_authenticated
   end

@@ -4,6 +4,7 @@ gem 'rails', '3.0.9'
 gem 'sorcery'
 
 
+
 gem "kaminari"
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -12,6 +13,7 @@ gem "kaminari"
 gem 'mysql' 
 #gem 'jquery-rails', '>= 1.0.12'
 gem 'jquery-rails'
+gem 'jquery_datepicker'
 gem 'client_side_validations'
 
 group :development do

@@ -4,6 +4,20 @@ class SessionsController < ApplicationController
 
   end
 
+  def index
+    render 'new'
+  end
+
+  def edit
+    render 'new'
+  end
+
+  def show
+    render 'new'
+  end
+
+
+
   def create
   user = login(params[:email], params[:password], params[:remember_me])
   users = User.find_by_email(params[:email])
