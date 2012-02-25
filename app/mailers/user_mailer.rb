@@ -19,7 +19,8 @@ class UserMailer < ActionMailer::Base
     @greeting = "Hi"
     mail :to => "to@example.org"
 
-  @url  = "http://127.0.0.1:3000/users/#{user.activation_token}/activate"
+  #@url  = "http://127.0.0.1:3000/users/#{user.activation_token}/activate"
+  @url  = "http://coursex.heroku.com/users/#{user.activation_token}/activate"
   mail(:to => user.email,
        :subject => "Welcome to CourseX")
   end
@@ -31,7 +32,7 @@ class UserMailer < ActionMailer::Base
   #
   def activation_success_email(user)
      @user = user
-  @url  = "http://127.0.0.1:3000/login"
+     @url  = "http://coursex.heroku.com/login"
   mail(:to => user.email,
        :subject => "Your account is now activated")
   end
