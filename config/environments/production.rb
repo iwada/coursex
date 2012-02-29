@@ -5,6 +5,9 @@ Coursex::Application.configure do
   # Code is not reloaded between requests
   config.cache_classes = true
 
+  #so i can use Metawhere
+  MetaWhere.operator_overload!
+
   # Full error reports are disabled and caching is turned on
   config.consider_all_requests_local       = false
   config.action_controller.perform_caching = true
