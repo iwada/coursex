@@ -48,4 +48,13 @@ class BranchesController < ApplicationController
     end
   end
 
+  def admin_user
+    if logged_in?
+      redirect_to(root_path) unless current_user.admin?
+      flash[:alert] = "You do not have the Required Privilege to View that Page"
+    else
+      redirect_to root_path
+    end
+  end
+
 end

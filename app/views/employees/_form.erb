@@ -9,12 +9,13 @@
 <div class="clearfix">
   <label>Last Name</label>
   <div class="input">
+    <!--<%= collection_select(:course, :tutor, Course.where(:category_of_course ^ @employee.id ), :id, :name, {:prompt => false},:class=> "text") %>-->
     <%=f.text_field :lastname %>
   </div>
 </div>
 
 <div class="clearfix">
-  <label>Mobile Number</label>
+  <label>Mobile Numbe</label>
   <div class="input">
     <%=f.text_field :mobile %>
   </div>
@@ -23,8 +24,7 @@
 <div class="clearfix">
 <label>Level</label>
   <div class="input">
-    <%= select( :employee, :level, { "Level 1" => 1, "Level 2" => 2},{}, {:class=>"text"}) %>
-
+<%= select( :employee, :level, { "Compulsory" => "Compulsory", "Optional" => "Optional"},{}, {:class=>"text"}) %>
 </div>
 </div>
 
@@ -32,14 +32,21 @@
 <div class="clearfix">
   <label>Sex</label>
   <div class="input">
-    <%= select( :employee, :sex, { "Male" => "Male", "Female" => "Female"},{}, {:class=>"text"}) %>
+    <%= select( :employee, :sex, { "Compulsory" => "Compulsory", "Optional" => "Optional"},{}, {:class=>"text"}) %>
+  </div>
+</div>
+
+<div class="clearfix">
+  <label>Email Adress</label>
+  <div class="input">
+    <%=f.text_field :email %>
   </div>
 </div>
 
 <div class="clearfix">
   <label>Date of Joining</label>
   <div class="input">
-    <span class="xlarge uneditable-input"><%= Time.now.strftime("%d %b. %Y")%></span>
+    <span class="xlarge uneditable-input">September 3rd, 2011</span>
   </div>
 </div>
 

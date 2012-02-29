@@ -36,4 +36,9 @@ class UserMailer < ActionMailer::Base
   mail(:to => user.email,
        :subject => "Your account is now activated")
   end
+
+  def course_registered(employee)
+    @employee = employee
+    mail(:to => employee.email,:subject =>"Course Registration Successful")
+  end
 end

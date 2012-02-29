@@ -1,7 +1,9 @@
 <div class="row-fluid" >
-
+    <% if current_user.admin? %>
   <%= render 'sidebar' %>
-
+      <% else %>
+       <%= render 'employeesidebar' %>
+      <% end %>
   <div class="span9">
     <div class="hero-unit">
 
@@ -12,7 +14,7 @@
           <%= f.submit :class=> "btn btn-primary" %>
           <%= link_to "Delete employee" , @employee, :method =>:delete,:confirm =>"You Sure?",
                       :title => "Delete #{@employee.firstname}",:class => "btn btn-danger" %>
-          <%= link_to 'Cancel', employees_path,:class => "btn" %>
+          <%= link_to 'Cancel', employees_dashboard_path,:class => "btn" %>
 
       <% end %>
     </div>

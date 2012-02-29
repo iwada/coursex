@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120223130642) do
+ActiveRecord::Schema.define(:version => 20120227012132) do
 
   create_table "branches", :force => true do |t|
     t.string   "name"
@@ -32,6 +32,7 @@ ActiveRecord::Schema.define(:version => 20120223130642) do
     t.integer  "maxallowed"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "course_id"
   end
 
   create_table "employees", :force => true do |t|
@@ -40,6 +41,16 @@ ActiveRecord::Schema.define(:version => 20120223130642) do
     t.string   "sex"
     t.integer  "level"
     t.integer  "mobile"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "email"
+    t.integer  "employee_id"
+  end
+
+  create_table "progresses", :force => true do |t|
+    t.integer  "course_id"
+    t.integer  "employee_id"
+    t.integer  "status"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -52,6 +63,7 @@ ActiveRecord::Schema.define(:version => 20120223130642) do
     t.integer  "mobile"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "email"
   end
 
   create_table "users", :force => true do |t|
@@ -68,6 +80,8 @@ ActiveRecord::Schema.define(:version => 20120223130642) do
     t.string   "activation_state"
     t.string   "activation_token"
     t.datetime "activation_token_expires_at"
+    t.boolean  "admin",                           :default => false
+    t.boolean  "employee",                        :default => false
   end
 
   add_index "users", ["activation_token"], :name => "index_users_on_activation_token"

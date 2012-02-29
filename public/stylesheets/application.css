@@ -2037,3 +2037,10 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
     top:50%;
     width:22px;
 }
+
+/*   DashBoard Styles       */
+.content { padding-top:-60px; width:960px; }
+.content#index a		{ width:270px; height:235px; margin-right:15px; margin-bottom:15px; display:block; float:left;
+    background-color:#e0e0e0; -moz-border-radius:10px; border-radius:10px; }
+.content#index a:hover	{ background-position:0 -235px; background-color:#f2f2f2; }
+

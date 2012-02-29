@@ -3,15 +3,23 @@
     <ul class="nav nav-list">
       <li class="nav header"></li>
 
-      <li class="nav-header"> SO Why Register?</li>
-      <li><a href="#">Ankit it's 03:34 no Content mail 1</a></li>
-      <li><a href="#">Ankit it's 03:34 no Content mail 2</a></li>
-      <li><a href="#">Ankit it's 03:34 no Content mail 3</a></li>
-      <li class="nav-header">Step 1</li>
-      <li><a href="#">Ankit it's 03:34 no Content mail 1</a></li>
-      <li><a href="#">Ankit it's 03:34 no Content mail 2</a></li>
-      <li><a href="#">Ankit it's 03:34 no Content mail 3 </a></li>
-
+      <li class="nav-header">Quick Link</li>
+      <li class= "<%= is_active?("dashboard") %>"><%=link_to "Home", users_dashboard_path%></li>
+      <li class= "<%= is_active?("new") %>"><%=link_to "New Course", new_course_path%></li>
+      <li class= "<%= is_active?("new") %>"><%=link_to "New Employee", new_employee_path%></li>
+      <li class= "<%= is_active?("new") %>"><%=link_to "New Trainer", new_trainer_path%></li>
+      <li class="nav-header">Number of Courses</li>
+      <li><a href="#">1000 Compulsory Courses </a></li>
+      <li><a href="#">2000 Optional Courses</a></li>
+      <li class="nav-header">Number of Employees</li>
+      <li><a href="#">500 Level 1 Employees  </a></li>
+      <li><a href="#">300 Level 2 Employees</a></li>
+      <li><a href="#">500 Level 3 Employee</a></li>
+      <li class="nav-header">Number of Trainers</li>
+      <li><a href="#">200 Trainers taking Compulsory courses </a></li>
+      <li><a href="#">200 Trainers taking Optional courses </a></li>
+      <li class="nav-header">Summary</li>
+      <li><a href="#">Ten Users Online</a></li>
     </ul>
   </div>
 </div>

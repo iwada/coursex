@@ -23,4 +23,28 @@ module ApplicationHelper
   def is_active?(page_name)
     "active" if params[:action] == page_name
   end
+
+
+
+
+
+
+
+
+  def gopath(email)
+    employee = Employee.find_by_email(email)
+    trainer = Trainer.find_by_email(email)
+    user = User.find_by_email(email)
+    if user.admin? #is an Admin User
+      return users_dashboard_path
+    elsif !employee && user     #Has signed up but has not registered
+      return new_employee_path
+    elsif employee           #Is an Employee
+      return employees_dashboard_path
+    elsif trainer           #is a Trainer   ## NOTE: Trainer would never fill the registration form themselves
+         return trainers_dashboard_path
+    end
+    return "root_path"
+  end
 end
+

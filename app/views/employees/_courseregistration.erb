@@ -1,0 +1,23 @@
+<%= form_for @employee, :url => {:action =>"register"} do |f|%>
+
+
+    <div class="clearfix">
+      <label>Avaliable Courses</label>
+      <div class="input">
+
+        <%=  f.select :id, Course.all.select{|x| not @employee.courses.include?(x)}.collect{|x|[x.name,x.id]} %>
+        <div id="pro1" class="hide" >Currnelty Selected:<%= current_user.admin?   %></div>
+        <div id="pro2" class="hide" >Product 2</div>
+
+
+      </div>
+    </div>
+
+    <div class="actions">
+      <%= f.submit "Register",:class=> "btn btn-primary" %>
+      <%= link_to 'Cancel', employees_dashboard_path,:class => "btn" %>
+    </div>
+
+<% end %>
+
+>

@@ -1,9 +1,10 @@
 <div class="span3">
   <div class="well sidebar nav">
     <ul class="nav nav-list">
-      <li class="nav header"></li>
-      <li class="<%= is_active?("index") %>" ><%=link_to "Home", courses_path%></li>
+      <li class="nav header"><%= link_to "Home", users_dashboard_path %></li>
+      <li class="<%= is_active?("dashboard") %>" ><%=link_to "Course Dashboard", courses_dashboard_path %></li>
       <li class= "<%= is_active?("new") %>"><%=link_to "New Course", new_course_path%></li>
+      <li class= "<%= is_active?("index") %>"><%=link_to "Show Courses", courses_path%></li>
 
       <li class="nav-header"> Recently Registered Courses</li>
        <li class=""><a href="#"><%=lastthree %></a></li >

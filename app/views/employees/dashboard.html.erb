@@ -1,0 +1,11 @@
+<div class="row-fluid" >
+
+  
+  <% if current_user.admin? %>
+      <%= render "sidebar" %>
+      <% else %>
+      <%= render "employeesidebar" %>
+      <% end %>
+    <%= render 'dashboardpanel' %>
+
+</div>

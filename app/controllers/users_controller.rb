@@ -1,5 +1,7 @@
 class UsersController < ApplicationController
   skip_before_filter :require_login, :only => [ :new,:create,:activate] #put here to avoid Login
+  before_filter :admin_user, :only => [:destroy,:index]
+
 
   def index
     @title = "User Listing"
@@ -45,10 +47,11 @@ class UsersController < ApplicationController
     end
   end
 
+
+
   def edit
     @user = User.find(params[:id])
     @title = "#{@user.email}'s Details"
-
   end
 
 
@@ -60,6 +63,24 @@ class UsersController < ApplicationController
   else
     not_authenticated
   end
+  end
+
+  def correct_user
+    @user = User.find(params[:id])
+    redirect_to(users_dashboard_path) unless current_user?(@user)
+  end
+
+  def admin_user
+    if logged_in?
+      redirect_to(root_path) unless current_user.admin?
+      flash[:alert] = "You do not have the Required Privilege to View that Page"
+    else
+      redirect_to root_path
+    end
+  end
+
+  def dashboard
+
   end
 
 

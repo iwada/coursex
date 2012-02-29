@@ -1,12 +1,16 @@
 class CoursesController < ApplicationController
   def new
-    @title = "User Registratoin"
+    @title = "Course Registratoin"
     @course = Course.new
   end
 
   def index
     @title = "Course Listing"
     @course =  Course.order("name").page(params[:page]).per(2)
+  end
+
+  def dashboard
+    @title = "Course Dashboard"
   end
 
   def edit

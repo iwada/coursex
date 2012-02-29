@@ -1,5 +1,9 @@
 class User < ActiveRecord::Base
+  has_many :trainers
+  has_many :employees
+  belongs_to :branch
   authenticates_with_sorcery!
+
 
 #  def send_activation_needed_email!
 #end

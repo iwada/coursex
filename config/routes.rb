@@ -1,73 +1,17 @@
 Coursex::Application.routes.draw do
 
 
-
-  get "branches/index"
-
-  get "branches/edit"
-
-  get "branches/show"
-
-  get "branches/new"
-
-  get "branches/destroy"
-
-  get "courses/new"
-
-  get "courses/index"
-
-  get "courses/edit"
-
-  get "courses/update"
-
-  get "courses/destroy"
-
-  get "courses/show"
-
-  get "trainers/new"
-
-  get "trainers/index"
-
-  get "trainers/edit"
-
-  get "trainers/update"
-
-  get "trainers/destroy"
-
-  get "trainers/show"
-
-  get "employees/index"
-
-  get "employees/edit"
-
-  get "employees/update"
-
-  get "employees/destroy"
-
-  get "employees/show"
-
-  get "employee/index"
-
-  get "employee/edit"
-
-  get "employee/update"
-
-  get "employee/destroy"
-
-  get "employee/show"
-
-
-
-  get "password_resets/create"
-
-  get "password_resets/edit"
-
-  get "password_resets/update"
-
   get "logout" => "sessions#destroy", :as => "logout"
   get "login" => "sessions#new", :as => "login"
   get "signup" => "users#new", :as => "signup"
   get "help" =>"pages#help" , :as => "help"
+
+  match 'courses/dashboard' , :to=> 'courses#dashboard'
+  match 'trainers/dashboard' , :to=> 'trainers#dashboard'
+  match 'employees/dashboard' , :to=> 'employees#dashboard'
+  match 'users/dashboard' , :to=> 'users#dashboard'
+  match 'employees/register' ,  :to=>'employees#register'
+
 
 
 
@@ -87,6 +31,7 @@ resources :users do
     get :activate
   end
 end
+
 
   get "sessions/new"
 

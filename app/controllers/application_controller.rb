@@ -5,8 +5,7 @@ class ApplicationController < ActionController::Base
   include PagesHelper
   include ApplicationHelper
   include CoursesHelper
-
-
+  include EmployeesHelper
 
 
   protected
@@ -14,10 +13,20 @@ class ApplicationController < ActionController::Base
     redirect_to login_path, :alert => "Please login to Access that Page."
   end
 
+
+
   private
   def instantiate_controller_and_action_names
     @current_action = action_name
-    @current_controller = controller_name
+    @current_coroller = controller_name
   end
+
+  private
+  #def authorize_admin!
+  #  logged_in?
+  #  unless current_user.admin?
+  #   redirect_to root_path, :notice => "Please You do not have the Access Right for this page"
+  #  end
+  #  end
 
 end
