@@ -32,17 +32,25 @@ module ApplicationHelper
 
 
   def gopath(email)
+    @as = root_path
     employee = Employee.find_by_email(email)
     trainer = Trainer.find_by_email(email)
     user = User.find_by_email(email)
     if user.admin? #is an Admin User
+
       return users_dashboard_path
     elsif !employee && user     #Has signed up but has not registered
+     # @pre = "new_employee_path"
       return new_employee_path
+
     elsif employee           #Is an Employee
-      return employees_dashboard_path
+
+      return  employees_dashboard_path
+
     elsif trainer           #is a Trainer   ## NOTE: Trainer would never fill the registration form themselves
+
          return trainers_dashboard_path
+
     end
     return "root_path"
   end

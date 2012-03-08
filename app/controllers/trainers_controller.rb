@@ -1,5 +1,6 @@
 class TrainersController < ApplicationController
   skip_before_filter :require_login, :only => [ :new,:create,:activate] #put here to avoid Login
+  before_filter :admin_user, :only => [:index,:update]
 
   def new
     @title = "New Trainer Registration"
@@ -48,7 +49,7 @@ class TrainersController < ApplicationController
     @title = "Trainer Registration"
     @trainer = Trainer.new(params[:trainer])
     if @trainer.save
-      redirect_to trainer_dashboard__path , :notice => 'You have successfully Registered'
+      redirect_to trainers_dashboard_path , :notice => 'You have successfully Registered'
     else
       flash.now.alert = "Oops, Something went wrong"
       render :new
@@ -56,12 +57,11 @@ class TrainersController < ApplicationController
   end
 
   def admin_user
-    if logged_in?
-      redirect_to(root_path) unless current_user.admin?
-      flash[:alert] = "You do not have the Required Privilege to View that Page"
-    else
+    if logged_in?  and !current_user.admin?
       redirect_to root_path
+      flash[:error] = "You do not have the Required Privilege to View that Page"
     end
   end
+
 
 end

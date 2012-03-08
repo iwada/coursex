@@ -1,20 +1,21 @@
 <div class="span3">
   <div class="well sidebar nav">
-    <ul class="nav nav-list">
+    <ul class="nav nav-list ">
       <li class= "<%= is_active?("dashboard") %>" ><%=link_to "Employee Dashboard", employees_dashboard_path%></li>
       <li class="nav-header"> Summary </li>
       <li class= "<%= is_active?("register") %>" ><%=link_to "Register for Course", employees_register_path%></li>
-      <li class= "<%= is_active?("show") %>" ><%=link_to "My Details", employee_path(current_employee.id)%></li>
-      <li><a href="#">Employee 3</a></li>
+      <% if !current_user.admin?%>
+      <li class= "<%= is_active?("show") %>" ><%=link_to "My Details", employee_path(current_employee.id) unless logged_in?%></li>
+          <% end %>
+
       <li class="nav-header">Your Eligible Courses</li>
-      <li><a href="#">Employee 1</a></li>
-      <li><a href="#">Employee 2</a></li>
-      <li><a href="#">Employee 3 </a></li>
+      <li><a href="#">Course 1</a></li>
+      <li><a href="#">Course 2</a></li>
+      <li><a href="#">Course 3 </a></li>
       <li class="nav-header">Your Registrations</li>
-      <li><a href="#">User </a></li>
-      <li><a href="#">User </a></li>
-      <li><a href="#">User</a></li>
-      <li><a href="#">User</a></li>
+      <li><a href="#">Course 1</a></li>
+      <li><a href="#">Course 2</a></li>
+      <li><a href="#">Course 3 </a></li>
     </ul>
   </div>
 </div>

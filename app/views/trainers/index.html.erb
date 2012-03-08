@@ -29,10 +29,10 @@
               <td><%= trainer.handle%></td>
               <td><%= trainer.sex %></td>
               <td><%= trainer.mobile %></td>
-              <td><%= link_to 'More ',trainer%></td>
-              <td><%= link_to 'Edit', edit_trainer_path(trainer) %></td>
+              <td><%= link_to 'More ',trainer,:class => 'btn btn-mini'%></td>
+              <td><%= link_to 'Edit', edit_trainer_path(trainer),:class => 'btn btn-mini' %></td>
               <td><%= link_to 'Destroy', trainer, :confirm => 'Are you sure?',
-                              :method => :delete %></td >
+                              :method => :delete , :class => 'btn btn-mini btn-danger'%></td >
         <% end %>
         </tr>
         </tbody>

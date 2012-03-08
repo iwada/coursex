@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120227012132) do
+ActiveRecord::Schema.define(:version => 20120305014555) do
 
   create_table "branches", :force => true do |t|
     t.string   "name"
@@ -33,7 +33,10 @@ ActiveRecord::Schema.define(:version => 20120227012132) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "course_id"
+    t.string   "slug"
   end
+
+  add_index "courses", ["slug"], :name => "index_courses_on_slug"
 
   create_table "employees", :force => true do |t|
     t.string   "firstname"

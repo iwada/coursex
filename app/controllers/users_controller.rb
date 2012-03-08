@@ -3,6 +3,7 @@ class UsersController < ApplicationController
   before_filter :admin_user, :only => [:destroy,:index]
 
 
+
   def index
     @title = "User Listing"
     @user =  User.order("email").page(params[:page]).per(3)
@@ -72,8 +73,8 @@ class UsersController < ApplicationController
 
   def admin_user
     if logged_in?
-      redirect_to(root_path) unless current_user.admin?
-      flash[:alert] = "You do not have the Required Privilege to View that Page"
+      redirect_to (root_path), :error => "You do not have the Required Privilege to View that Page" unless current_user.admin?
+      #flash[:alert] = "You do not have the Required Privilege to View that Page"
     else
       redirect_to root_path
     end
@@ -82,10 +83,5 @@ class UsersController < ApplicationController
   def dashboard
 
   end
-
-
-
-
-
   end
 

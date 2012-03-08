@@ -5,6 +5,7 @@ gem 'sorcery'
 gem "meta_where"
 gem "paperclip", "~> 2.0"
 gem 'pdfkit'
+gem "friendly_id", "~> 4.0.1"
 
 
 

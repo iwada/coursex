@@ -23,23 +23,17 @@ class EmployeesController < ApplicationController
     if request.post?
       UserMailer.course_registered(current_user).deliver
       redirect_to employees_dashboard_path , :notice => "You have successfully been Registered"
-
-
     end
-
-
   end
 
   def edit
     @employee= Employee.find(params[:id])
      @title = "#{@employee.firstname}'s Details"
-
   end
 
   def update
     @employee= Employee.find(params[:id])
     if @employee.update_attributes(params[:employee])
-
       redirect_to employees_dashboard_path,:notice=>"Update Successfull"
     else
       flash[:success] = "Update Attempt Failed"
@@ -59,7 +53,6 @@ class EmployeesController < ApplicationController
   def show
     @title = "Employee Detail"
     @employee = Employee.find(params[:id])
-
   end
 
   def create
@@ -79,13 +72,11 @@ class EmployeesController < ApplicationController
   end
 
   def admin_user
-    if logged_in?
-      redirect_to(employees_dashboard_path) unless current_user.admin?
-      flash[:alert]  = "You do not have the Required Privilege to View that Page "
-
-    else
+    if logged_in?  and !current_user.admin?
       redirect_to root_path
+      flash[:error] = "You do not have the Required Privilege to View that Page"
     end
   end
+
 
 end

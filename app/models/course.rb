@@ -1,5 +1,9 @@
 class Course < ActiveRecord::Base
 
+
+  extend FriendlyId
+  friendly_id :name, use: :slugged
+
   #validates :name,  :presence => true,:length   => { :maximum => 50 }
   #validates :description, :presence =>true
   #validates :date_of_course, :presence =>true

@@ -1,4 +1,6 @@
 class CoursesController < ApplicationController
+  before_filter :admin_user , :only => [:index]
+
   def new
     @title = "Course Registratoin"
     @course = Course.new
@@ -50,6 +52,13 @@ class CoursesController < ApplicationController
       redirect_to courses_path, :notice => "Course Created Successfully"
     else
       render :new
+    end
+  end
+
+  def admin_user
+    if logged_in?  and !current_user.admin?
+      redirect_to root_path
+      flash[:error] = "You do not have the Required Privilege to View that Page"
     end
   end
 

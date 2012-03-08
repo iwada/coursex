@@ -27,13 +27,13 @@
               <td><%= employee.level %></td>
               <td><%= employee.sex %></td>
               <td><%= employee.firstname %></td>
-              <td><%= link_to 'More ',employee%></td>
-              <td><%= link_to 'Edit', edit_employee_path(employee) %></td>
+              <td><%= link_to 'More ',employee,:class => 'btn btn-mini'%></td>
+              <td><%= link_to 'Edit', edit_employee_path(employee),:class => 'btn btn-mini' %></td>
 
 
 
               <td><%= link_to 'Destroy', employee, :confirm => 'Are you sure?',
-                              :method => :delete %></td >
+                              :method => :delete, :class => 'btn btn-mini btn-danger' %></td >
         <% end %>
         </tr>
         </tbody>
