@@ -15,10 +15,11 @@ gem "kaminari"
 
 #gem 'mysql', '~> 0.2.6'
 gem 'mysql' 
-#gem 'jquery-rails', '>= 1.0.12'
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 1.0.12'
+#gem 'jquery-rails'
 gem 'jquery_datepicker'
 gem 'client_side_validations'
+
 
 group :development do
   gem 'rails-dev-boost', :git => 'git://github.com/thedarkone/rails-dev-boost.git', :require => 'rails_development_boost'

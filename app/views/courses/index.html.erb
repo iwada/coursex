@@ -26,7 +26,7 @@
                <td>CS-<%= course.id %></td>
               <td><%= course.name %></td>
               <td><%= course.description %></td>
-              <td><%= course.category_of_course %></td>
+              <td><%= coursename(params[:id]) %></td>
               <td><%= course.tutor %></td>
               <td><%= course.maxallowed %></td>
               <td><%= link_to 'More ',course, :class => 'btn btn-mini'%></td>
@@ -36,6 +36,8 @@
 
               <td><%= link_to 'Destroy', course, :confirm => 'Are you sure?',
                               :method => :delete , :class => 'btn btn-mini btn-danger'%></td >
+
+
         <% end %>
         </tr>
         </tbody>

@@ -1,7 +1,7 @@
 <div class="span3">
   <div class="well sidebar nav">
     <ul class="nav nav-list">
-      <li class="nav header"><%= link_to "Home", users_dashboard_path %></li>
+      <li class="nav header"><%= link_to "Admin Home", users_dashboard_path %></li>
       <li class="<%= is_active?("dashboard") %>" ><%=link_to "Course Dashboard", courses_dashboard_path %></li>
       <li class= "<%= is_active?("new") %>"><%=link_to "New Course", new_course_path%></li>
       <li class= "<%= is_active?("index") %>"><%=link_to "Show Courses", courses_path%></li>
@@ -14,12 +14,13 @@
       <li><a href="#">Course 3 </a></li>
       <li class="nav-header">Most Active Course</li>
       <li><a href="#">I Love Jesus</a></li>
-      <li class="nav-header">Course Category Overview</li>
-      <li><a href="#">Level 1 Courses: <%=level1courses %>  </a></li>
-      <li><a href="#">Level 2 Courses: <%=level2courses %>  </a></li>
-      <li><a href="#">Optional Courses:<%= optional %></a></li>
-      <li><a href="#">Compulsory Courses:<%= compulsory %></a></li>
-      <li><a href="#">I Love Jesus</a></li>
+      <li class="nav-header"> Courses Overview</li>
+      <li><a href="#">Level 1 Courses  Avaliable   [ <%=level1courses %> ]  </a></li>
+      <li><a href="#">Level 2 Courses Avaliable    [ <%=level2courses %> ]  </a></li>
+      <li><a href="#">Optional Courses Avaliable   [ <%= optional %> ] </a></li>
+     <li><a href="#">Comp. Courses Avaliable       [ <%= compulsory %> ] </a></li>
+
+
     </ul>
   </div>
 </div>

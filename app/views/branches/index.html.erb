@@ -24,13 +24,13 @@
               <td>BR-<%= branch.id %></td>
               <td><%= branch.name %></td>
               <td><%= branch.country%></td>
-              <td><%= link_to 'More ',branch%></td>
-              <td><%= link_to 'Edit', edit_branch_path(branch) %></td>
+              <td><%= link_to 'More ',branch , :class => 'btn btn-mini'%></td>
+              <td><%= link_to 'Edit', edit_branch_path(branch),:class => 'btn btn-mini' %></td>
 
 
 
-              <td><%= link_to 'Destroy', branch, :confirm => 'Are you sure?',
-                              :method => :delete %></td >
+              <td><%= link_to 'Destroy', branch, :confirm => 'Are you sure You want to delete this branch?',
+                              :method => :delete , :class => 'btn btn-mini btn-danger' %></td >
         <% end %>
         </tr>
         </tbody>

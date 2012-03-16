@@ -1,3 +1,4 @@
+
 <div class="row-fluid" >
 
   <%= render "sidebar" %>
@@ -6,7 +7,9 @@
   <div class="span9">
     <div class="hero-unit">
 
-      <%= form_for @course   do |f|%>
+
+           <%= form_for @course ,:validate => true  do |f|%>
+
           <%= render 'form' ,:f => f%>
 
           <div class="actions">

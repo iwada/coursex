@@ -9,6 +9,7 @@ Coursex::Application.routes.draw do
   match 'courses/dashboard' , :to=> 'courses#dashboard'
   match 'trainers/dashboard' , :to=> 'trainers#dashboard'
   match 'employees/dashboard' , :to=> 'employees#dashboard'
+  match 'branches/dashboard' , :to=> 'branches#dashboard'
   match 'users/dashboard' , :to=> 'users#dashboard'
   match 'employees/register' ,  :to=>'employees#register'
 

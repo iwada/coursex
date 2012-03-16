@@ -2,8 +2,13 @@ class BranchesController < ApplicationController
 
   def index
     @title = "Branch Listing"
-    @branch =  Branch.order("name").page(params[:page]).per(2)
+    @branch =  Branch.order("name").page(params[:page]).per(5)
   end
+
+  def dashboard
+    @title = "Branches Dashboard"
+  end
+
 
   def create
     @branch = Branch.new(params[:branch])

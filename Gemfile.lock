@@ -121,7 +121,7 @@ PLATFORMS
 DEPENDENCIES
   client_side_validations
   friendly_id (~> 4.0.1)
-  jquery-rails
+  jquery-rails (>= 1.0.12)
   jquery_datepicker
   kaminari
   meta_where

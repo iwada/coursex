@@ -1,21 +1,19 @@
 <div class="span3">
   <div class="well sidebar nav">
     <ul class="nav nav-list">
+      <li class= "<%= is_active?("") %>"><%=link_to "Admin Home", users_dashboard_path%></li>
       <li class="nav header"></li>
-      <li class= "<%= is_active?("index") %>" ><%=link_to "Home", branches_path%></li>
+
+      <li class= "<%= is_active?("dashboard") %>" ><%=link_to "Branch Dashboard", branches_dashboard_path%></li>
+      <li class= "<%= is_active?("index") %>" ><%=link_to "Show Branches", branches_path%></li>
       <li class= "<%= is_active?("new") %>"><%=link_to "Create Branch", new_branch_path%></li>
-      <li class="nav-header"> Registered Branches</li>
-      <li><a href="#">Branch 1</a></li>
-      <li><a href="#">Branch 2</a></li>
-      <li><a href="#">Branch 3</a></li>
-      <li class="nav-header">Upcoming ?</li>
-      <li><a href="#">Branch 1</a></li>
-      <li><a href="#">Branch 2</a></li>
+      <li class="nav-header"> Recently Created Branche</li>
+      <li><a href="#"><%= recent_branch %></a></li>
+      <li class="nav-header">Most Active Branch</li>
+      <li><a href="#"><%= most_active  %></a></li>
+      <li class="nav-header">Least Active Branch</li>
       <li><a href="#">Branch 3 </a></li>
-      <li class="nav-header">User ?</li>
-      <li><a href="#">User </a></li>
-      <li><a href="#">User</a></li>
-      <li><a href="#">User</a></li>
+
     </ul>
   </div>
 </div>

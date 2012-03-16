@@ -81,7 +81,7 @@ class UsersController < ApplicationController
   end
 
   def dashboard
-
+    @title = "User Dashboard"
   end
   end
 

@@ -19,16 +19,13 @@
             <label>Country</label>
             <div class="input">
               <%=f.select :country, options_for_select(countries) %>
-
-
-
-            </div>
+           </div>
           </div>
 
 
 
           <div class="actions">
-            <%= f.submit "Create Branch", :class=> "btn btn-success" %>
+            <%= f.submit "Create Branch", :class=> "btn btn-primary" %>
             <%= link_to 'Cancel', branches_path,:class => "btn" %>
           </div>
       <% end %>

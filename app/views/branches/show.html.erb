@@ -1,2 +1,43 @@
-<h1>Branches#show</h1>
-<p>Find me in app/views/branches/show.html.erb</p>
+<div class="row-fluid" >
+  <%= render "sidebar" %>
+
+  <div class="span9">
+    <div class="hero-unit">
+
+      <table>
+        <tbody>
+        <tr>
+          <td>Branch ID</td>
+          <td><%= @branch.id  %></td>
+        </tr>
+        <tr>
+          <td >Branch Name</td>
+          <td ><%= @branch.name%></td>
+        </tr>
+
+        <tr>
+          <td >Branch Location </td>
+          <td ><%= @branch.country%></td>
+        </tr>
+
+        
+        <tr>
+          <td >Created on</td>
+          <td  ><%= @branch.created_at.strftime("%d %b. %Y")%></td>
+        </tr>
+
+        <tr>
+          <td >Last Modified on</td>
+          <td  ><%= @branch.updated_at.strftime("%d %b. %Y")%></td>
+        </tr>
+        </tbody>
+
+      </table>
+      <%= link_to 'Edit Branch', edit_branch_path(@branch),:class=>"btn btn-primary" %>
+      <%= link_to "Delete Branch" , @branch, :method =>:delete,:confirm =>"Are You Sure You want to Delete this Branch?",
+                  :title => "Delete {@branch.name}",:class => "btn btn-danger" %>
+      <%= link_to 'Cancel', branches_path,:class => "btn" %>
+    </div>
+  </div>
+</div>
+

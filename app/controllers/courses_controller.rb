@@ -8,7 +8,7 @@ class CoursesController < ApplicationController
 
   def index
     @title = "Course Listing"
-    @course =  Course.order("name").page(params[:page]).per(2)
+    @course =  Course.order("name").page(params[:page]).per(5)
   end
 
   def dashboard

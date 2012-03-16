@@ -2,6 +2,9 @@
 //This file is automatically included by javascript_include_tag :defaults
 
 $(document).ready(function () {
+    $("body").css("display", "none");
+    $("body").fadeIn(1000);
+
     $("#employee_id").bind("change", function () {
         if ($(this).val() == "3") {
             $("#pro1").slideDown();
@@ -12,4 +15,7 @@ $(document).ready(function () {
             $("#pro1").slideUp();
         }
     });
+
+
 });
+

@@ -9,9 +9,9 @@
 
 
 <div class="clearfix">
-  <label>Branch Location</label>
+  <label>Country</label>
   <div class="input">
-    <%=f.text_field :description %>
+    <%=f.select :country, options_for_select(countries) %>
   </div>
 </div>
 

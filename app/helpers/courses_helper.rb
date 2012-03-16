@@ -21,5 +21,11 @@ module CoursesHelper
 
   end
 
+  def coursename(name)
 
-end
+    if(name != 3)
+      @coursename = "This is"
+       end
+  end
+  end
+
