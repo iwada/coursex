@@ -8,7 +8,7 @@ class TrainersController < ApplicationController
   end
 
   def dashboard
-    @title = "My DashBoard"
+    @title = "Trainer DashBoard"
   end
   def index
     @title =" Trainers Listing"
@@ -17,7 +17,7 @@ class TrainersController < ApplicationController
 
   def edit
     @trainer= Trainer.find(params[:id])
-    @title = "Edit Details"
+    @title = "Edit Trainers Details"
   end
 
   def update
@@ -49,7 +49,7 @@ class TrainersController < ApplicationController
     @title = "Trainer Registration"
     @trainer = Trainer.new(params[:trainer])
     if @trainer.save
-      redirect_to trainers_dashboard_path , :notice => 'You have successfully Registered'
+      redirect_to trainers_dashboard_path , :notice => 'Trainer successfully Registered'
     else
       flash.now.alert = "Oops, Something went wrong"
       render :new

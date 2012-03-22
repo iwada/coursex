@@ -1,0 +1,23 @@
+<div class="span3">
+  <div class="well sidebar nav">
+    <ul class="nav nav-list">
+
+      <li class= "<%= is_active?("index") %>" ><%=link_to "Home", trainers_path%></li>
+
+      <li class="nav-header"> Courses Registered for</li>
+
+      <li><a href="#"><%=lastthree %></a></li >
+      <li class="nav-header">Avaliable Courses</li>
+      <li><a href="#">Course 1</a></li>
+      <li><a href="#">Course 2</a></li>
+      <li><a href="#">Course 3 </a></li>
+      <li class="nav-header">Announcement</li>
+      <li><a href="#">I Love Jesus</a></li>
+      <li class="nav-header">Trainer Overview</li>
+      <li><a href="#">Level 1 Trainers: <%=level1courses %>  </a></li>
+      <li><a href="#">Level 2 Trainers: <%=level2courses %>  </a></li>
+      <li><a href="#">Optional Trainers:<%= optional %></a></li>
+      <li><a href="#">I Love Jesus</a></li>
+    </ul>
+  </div>
+</div>

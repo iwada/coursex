@@ -1,11 +1,41 @@
+<script type="text/javascript" charset="utf-8">
+    $(function () {
+        new Highcharts.Chart({
+            chart: { renderTo: 'orders_chart' },
+            type: 'bar',
+            title: { text: 'Employee Overview  ' },
+            xAxis: { type: 'datetime' },
+            yAxis: {
+                title: { text: 'Employees'}
+            },
+            series: [{
+                name:"Employee Pattern",
+                data: [1, 2, 5, 7, 3]
+            }] ,
+            series: [{
+                name:"Employee Pattern",
+                data: [1, 2, 5, 7, 3]
+            }]
+        });
+    });
+</script>
 <div class="row-fluid" >
-
-  
-  <% if current_user.admin? %>
-      <%= render "sidebar" %>
+   <% if logged_in? and current_user.admin? %>
+  <%= render "sidebar" %>
       <% else %>
-      <%= render "employeesidebar" %>
+      <%=  render "employees/employeesidebar" %>
       <% end %>
-    <%= render 'dashboardpanel' %>
 
+
+  <div class="span9">
+    <div class="hero-unit" >
+      <div  id="orders_chart">  </div>
+
+
+
+    </div>
+  </div>
+  <div class="span5">
+    <p></p>
+  </div>
 </div>

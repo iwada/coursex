@@ -1,10 +1,22 @@
+<script>
+    $(function ()
+    { $("#example").tooltip();
+    });
+</script>
 
 <div class="row-fluid" >
-  <%= render "sidebar" %>
+  <% if  logged_in? and current_user.admin?  %>
+  <%= render 'sidebar' %>
+      <% else %>
+  <%= render 'employeesidebar' %>
+      
+      <% end %>
   <div class="span9" >
-    <div class="hero-unsit">
+    <div class="hero-unit">
       <%= form_for @trainer   do |f|%>
           <%= render 'form' ,:f => f%>
+
+
 
           <div class="actions">
             <%= f.submit "I'm Done",:class=> "btn btn-primary" %>
@@ -13,6 +25,7 @@
 
       <% end %>
     </div>
+    <a href="#" id="example" class="btn btn-danger" rel="popover" data-content="It's so simple to create a tooltop for my website!" data-original-title="Twitter Bootstrap Popover">hover for popover</a>
   </div>
 
 </div>

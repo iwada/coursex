@@ -5,12 +5,15 @@
 
   <div class="span9">
     <div class="hero-unit">
+      <fieldset >
+        <legend >Trainers Listing</legend>
+
       <table class="zebra-striped" id="sortTableExample">
         <thead>
         <tr>
           <th> ID </th>
           <th> First Name</th>
-          <th>Second Name</th>
+          <th>Others</th>
           <th>Handles </th>
           <th>Sex</th>
           <th>Mobile</th>
@@ -37,6 +40,7 @@
         </tr>
         </tbody>
       </table>
+      </fieldset>
       <%= paginate @trainer %>
 
     </div>

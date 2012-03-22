@@ -58,8 +58,10 @@ class EmployeesController < ApplicationController
   def create
     @title = "Employee Registration"
     @employees = Employee.new(params[:employee])
-    if @employees.save
-      redirect_to employees_path , :notice => 'You have successfully Registered'
+    if @employees.save and current_user.admin?
+      redirect_to employees_dashboard_path , :notice => 'Employee successfully Registered'
+    elsif @employees.save and !current_user.admin?
+      redirect_to employees_path, :notice => 'You have been successfully Registered'
     else
       flash.now.alert = "Oops, Something went wrong"
       render :new

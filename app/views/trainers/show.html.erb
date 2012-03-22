@@ -1,3 +1,5 @@
+
+
 <div class="row-fluid" >
   <%= render "sidebar" %>
 
@@ -8,12 +10,13 @@
         <tbody>
 
         <tr>
-          <td>|<%= @trainer.firstname %>'s Details|</td>
-          <td></td>
+         <fieldset>
+           <legend>Details for <%= @trainer.firstname%>, <% @trainer.lastname %></legend>
+         </fieldset>
         </tr>
         <tr>
           <td >ID</td>
-          <td ><%= @trainer.id%></td>
+          <td ><%=@trainer.firstname.chars.first.to_s %> <%= @trainer.id%></td>
         </tr>
 
 
@@ -58,7 +61,7 @@
         </tbody>
 
       </table>
-      <%= link_to 'Edit trainer', edit_trainer_path(@trainer),:class=>"btn btn-primary" %>
+      <%= link_to 'Edit trainer', edit_trainer_path(@trainer),:class=>"btn btn-primary",:id=>"example" %>
       <%= link_to "Delete trainer" , @trainer, :method =>:delete,:confirm =>"You Sure?",
                   :title => "Delete {@trainer.name}",:class => "btn btn-danger" %>
       <%= link_to 'Cancel', trainers_path,:class => "btn" %>

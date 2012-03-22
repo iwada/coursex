@@ -395,7 +395,7 @@ body {
     line-height: 18px;
     color: #808080;
     text-rendering: optimizeLegibility;
-    background:url('../images/content_bg.png') repeat;}
+    /*background:url('../images/content_bg.png') repeat;}*/
 
 
 }
@@ -2080,3 +2080,7 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
     #padding-left: 5900px;
     font-size: 12px;
 }
+
+
+
+

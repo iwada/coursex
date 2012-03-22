@@ -23,9 +23,11 @@
         <a class="dropdown-toggle" data-toggle="dropdown" href="#"><%=current_user.email  %> <b class="caret"></b></a>
         <ul id="menu1" class="dropdown-menu">
 
+          <% if current_user.admin? %>
           <li><%=link_to "Dashboard", users_dashboard_path %></li>
-
-
+                   <% else %>
+              <li><%=link_to "Dashboard", employees_dashboard_path %></li>
+             <% end %>
 
           <li><%=link_to "Logout" ,logout_path %></li>
           <li> <%= link_to "Change Password", new_password_reset_path%></li>

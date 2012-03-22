@@ -1,10 +1,39 @@
+<script type="text/javascript" charset="utf-8">
+    $(function () {
+        new Highcharts.Chart({
+            chart: { renderTo: 'orders_chart' },
+            type: 'bar',
+            title: { text: 'Trainer Overview  ' },
+            xAxis: { type: 'datetime' },
+            yAxis: {
+                title: { text: 'Trainers'}
+            },
+            series: [{
+                name:"Trainers Pattern",
+                data: [1, 2, 5, 7, 3]
+            }] ,
+            series: [{
+                name:"Trainer Pattern",
+                data: [1, 2, 5, 7, 3]
+            }]
+        });
+    });
+</script>
 <div class="row-fluid" >
 
   <%= render "sidebar" %>
 
 
+  <div class="span9">
+    <div class="hero-unit" >
+      <div  id="orders_chart">
+
+      </div>
 
 
-     <%= render 'dashboardpanel' %>
-
+    </div>
+  </div>
+  <div class="span5">
+    <p></p>
+  </div>
 </div>

@@ -7,13 +7,12 @@
 
   <div class="span9">
     <div class="hero-unit">
+            <fieldset class="">
+        <legend>Details for <%= @employee.firstname.capitalize %></legend>
 
       <table>
         <tbody>
-        <tr>
-          <td>|<%= @employee.firstname %>'s Details|</td>
-          <td></td>
-        </tr>
+
         <tr>
           <td >First Name</td>
           <td ><%= @employee.firstname%></td>
@@ -40,6 +39,11 @@
         </tr>
 
         <tr>
+          <td >Level </td>
+          <td >Level <%= @employee.level%> Employee</td >
+        </tr>
+
+        <tr>
           <td >Date of Joining</td>
           <td ><%= @employee.created_at.strftime("%d %b. %Y")%></td >
         </tr>
@@ -48,6 +52,7 @@
         </tbody>
 
       </table>
+            </fieldset>
       <%= link_to 'Edit employee', edit_employee_path(@employee),:class=>"btn btn-primary" %>
       <%= link_to "Delete employee" , @employee, :method =>:delete,:confirm =>"You Sure?",
                   :title => "Delete {@employee.name}",:class => "btn btn-danger" %>

@@ -1,17 +1,25 @@
 <div class="span3">
   <div class="well sidebar nav">
     <ul class="nav nav-list">
+      <li class="nav header"><%= link_to "Admin Home", users_dashboard_path %></li>
+      <li class= "<%= is_active?("dashboard") %>" ><%=link_to "Trainer Dashboard", trainers_dashboard_path%></li>
+      <li class= "<%= is_active?("new") %>" ><%=link_to "Create Trainer", new_trainer_path%></li>
+      <li class= "<%= is_active?("index") %>" ><%=link_to "Show Trainers", trainers_path%></li>
+    <!--<li>-->
+      <!--<a href="#">-->
+        <!--<i class="icon-adjust"></i>-->
+        <!--Library-->
+      <!--</a>-->
+    <!--</li>-->
 
-      <li class= "<%= is_active?("index") %>" ><%=link_to "Home", trainers_path%></li>
+      <li class="nav-header"> Most Active Trainers</li>
 
-      <li class="nav-header"> Courses Registered for</li>
-
-       <li><a href="#"><%=lastthree %></a></li >
-       <li class="nav-header">Avaliable Courses</li>
-      <li><a href="#">Course 1</a></li>
-      <li><a href="#">Course 2</a></li>
-      <li><a href="#">Course 3 </a></li>
-      <li class="nav-header">Announcement</li>
+       <li><a href="#">Ankit?</a></li >
+       <li class="nav-header">Most Recent Trainer</li>
+      <li><a href="#">Trainer 1</a></li>
+      <li><a href="#">Trainer 2</a></li>
+      <li><a href="#">Trainer 3 </a></li>
+      <li class="nav-header">Trainers With Course Soon</li>
       <li><a href="#">I Love Jesus</a></li>
       <li class="nav-header">Trainer Overview</li>
       <li><a href="#">Level 1 Trainers: <%=level1courses %>  </a></li>

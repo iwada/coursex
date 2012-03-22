@@ -2,10 +2,12 @@
 
         <%= render "sidebar" %>
 
-
   <div class="span9">
     <div class="hero-unit">
-      <table class="zebra-striped" id="sortTableExample">
+      <fieldset>
+        <legend >Courses Created</legend>
+
+        <table class="zebra-striped" id="sortTableExample">
         <thead>
         <tr>
           <th> ID</th>
@@ -43,9 +45,12 @@
         </tbody>
       </table>
       <%= paginate @course %>
+
+          </fieldset>
     </div>
   </div>
   </div>
+
 <!--</div> Start-->
 
 

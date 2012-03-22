@@ -1,4 +1,6 @@
-
+<fieldset >
+  <legend>Create <%= controller.action_name.capitalize %> Employee</legend>
+</fieldset>
 <div class="clearfix">
   <label>First Name</label>
   <div class="input">
@@ -24,7 +26,7 @@
 <div class="clearfix">
 <label>Level</label>
   <div class="input">
-<%= select( :employee, :level, { "Compulsory" => "Compulsory", "Optional" => "Optional"},{}, {:class=>"text"}) %>
+<%= select( :employee, :level, { "Level One" => 1, "Level Two" => 2 , "Level Three" => 3},{}, {:class=>"text"}) %>
 </div>
 </div>
 
