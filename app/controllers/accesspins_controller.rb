@@ -1,5 +1,5 @@
 class AccesspinsController < ApplicationController
-  skip_before_filter :require_login
+
   def index
     @title = "Access Pins Listing"
     @accesspin = Accesspin.search(params[:search]).order("status").page(params[:page]).per(3)
