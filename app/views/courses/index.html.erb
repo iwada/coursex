@@ -4,9 +4,9 @@
 
   <div class="span9">
     <div class="hero-unit">
-      <fieldset>
-        <legend >Courses Created</legend>
 
+
+         <%= render 'coursefilter' %>
         <table class="zebra-striped" id="sortTableExample">
         <thead>
         <tr>
@@ -46,7 +46,6 @@
       </table>
       <%= paginate @course %>
 
-          </fieldset>
     </div>
   </div>
   </div>

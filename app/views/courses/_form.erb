@@ -1,10 +1,23 @@
-<fieldset>
-  <legend>Create <%= controller.action_name.capitalize %> Course</legend>
+<script type="text/javascript ">
+    $(function ()
+    { $("#coursename").tooltip()
+     $("#coursedesc").tooltip()
+        $("#courseroom").tooltip()
+        $("#coursemax").tooltip()
+        $("#coursetype").tooltip()
+        $("#coursetutor").tooltip()
+        $("#courseduration").tooltip()
+
+    });
+</script>
 <div class="clearfix">
   <label>Course Name</label>
   <div class="input">
     <%=f.text_field :name %>
+    <a href="#" id="coursedesc" rel="tooltip" data-original-title="Enter Unique Course Name">
+      <i class="icon-exclamation-sign"></i>
 
+    </a>
   </div>
 </div>
 
@@ -13,6 +26,11 @@
   <label>Course Description</label>
   <div class="input">
     <%=f.text_field :description %>
+
+    <a href="#" id="coursename" rel="tooltip" data-original-title="Describe the Course">
+      <i class="icon-exclamation-sign"></i>
+
+    </a>
   </div>
 </div>
 
@@ -35,6 +53,10 @@
   <label>Course Room Number</label>
   <div class="input">
     <%=f.text_field :roomnumber %>
+    <a href="#" id="courseroom" rel="tooltip" data-original-title="Venue for Course">
+      <i class="icon-exclamation-sign"></i>
+
+    </a>
   </div>
 </div>
 
@@ -42,6 +64,10 @@
     <label>Course Maximum</label>
     <div class="input">
       <%=f.text_field :maxallowed%>
+      <a href="#" id="coursemax" rel="tooltip" data-original-title="Maximum Number of Attendees">
+        <i class="icon-exclamation-sign"></i>
+
+      </a>
     </div>
     </div>
 
@@ -49,6 +75,10 @@
     <label>Course Type</label>
     <div class="input">
       <%= select( :course, :category_of_course, { "Auto Scheduled" => "1", "Optional" => "2","Level 1 Course" =>"3","Level 2 Course" => "4","Compulsory " => "5"}) %>
+      <a href="#" id="coursetype" rel="tooltip" data-original-title="Select Course Type">
+        <i class="icon-exclamation-sign"></i>
+
+      </a>
     </div>
   </div>
 
@@ -57,6 +87,10 @@
     <label>Course Tutor</label>
     <div class="input">
       <%= collection_select(:course, :tutor, Trainer.all, :firstname, :firstname, {:prompt => false},:class=> "text") %>
+      <a href="#" id="coursetutor" rel="tooltip" data-original-title="Course Tutor">
+        <i class="icon-exclamation-sign"></i>
+
+      </a>
 
   </div>
 </div>
@@ -65,6 +99,9 @@
   <label>Course Duration</label>
   <div class="input">
     <%=f.text_field :duration %>
+    <a href="#" id="courseduration" rel="tooltip" data-original-title="Course Duration(hrs)">
+      <i class="icon-exclamation-sign"></i>
+
+    </a>
   </div>
 </div>
-  </fieldset>

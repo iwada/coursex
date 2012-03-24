@@ -1,0 +1,28 @@
+<script type="text/javascript ">
+    $(function ()
+    { $("#quantity").tooltip()
+     $("#expires").tooltip()
+
+    });
+</script>
+<div class="clearfix">
+  <label>Quantity</label>
+  <div class="input">
+      <%=f.text_field :access_quantity%>
+    <a href="#" id="quantity" rel="tooltip" data-original-title="Quantity to be created(100 Max/Time)">
+      <i class="icon-exclamation-sign"></i>
+
+    </a>
+  </div>
+</div>
+
+  <div class="clearfix">
+    <label>Expires After(days):</label>
+    <div class="input">
+      <%=f.text_field :expires%>
+      <a href="#" id="expires" rel="tooltip" data-original-title="How long should the Pins last">
+        <i class="icon-exclamation-sign"></i>
+
+      </a>
+    </div>
+  </div>

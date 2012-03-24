@@ -1,0 +1,8 @@
+<form action = "<%= accesspins_path %>" method = "get" id="search">
+  <p>
+    <%= text_field_tag :search, params[:search] %>
+    <%= submit_tag "Search", :name => nil %>  Or Filter by:
+    <%= select_tag "accessfilter", options_for_select(["", "Used", "Un Used" ], "MasterCard") %>
+    <%= submit_tag "Filter Results", :name => nil %>
+  </p>
+</form>

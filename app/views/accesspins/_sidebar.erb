@@ -1,0 +1,18 @@
+<div class="span3">
+  <div class="well sidebar nav">
+    <ul class="nav nav-list">
+      <li class="nav header"><%= link_to "Admin Home", users_dashboard_path %></li>
+
+      <li class="<%= is_active?("dashboard") %>" ><%=link_to "Access Pin Dashboard", accesspins_dashboard_path %></li>
+      <li class="<%= is_active?("new") %>" ><%=link_to "Create Pins", new_accesspin_path %></li>
+      <li class="<%= is_active?("index") %>" ><%=link_to "Show Pins", accesspins_path %></li>
+
+      <li class="nav-header"> Total Number of Pins</li>
+      <li class=""><a href="#"><%=totalpins %></a></li >
+      <li class="nav-header"> Number of Used Pins</li>
+       <li class=""><a href="#"><%= usedpins %> </a></li >
+       <li class="nav-header">Number of Unused Pins</li>
+      <li class=><a href="#"><%= unusedpins %> </a></li>
+    </ul>
+  </div>
+</div>

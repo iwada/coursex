@@ -14,6 +14,14 @@ class Employee < ActiveRecord::Base
 
   end
 
+  def self.search(search)
+    if search
+      where('firstname LIKE ? OR lastname like ?', "%#{search}%","%#{search}%")
+    else
+      scoped
+    end
+  end
+
 
 
 end

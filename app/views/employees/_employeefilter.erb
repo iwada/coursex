@@ -1,0 +1,8 @@
+<form action = "<%= employees_path %>" method = "get" id="search">
+  <p>
+    <%= text_field_tag :search, params[:search] %>
+    <%= submit_tag "Search", :name => nil %>  Or Filter by:
+    <%= select_tag "employeefilter", options_for_select([ "", "Level 1 Employees", "Level 2 Employees","Level 3 Employees" ], "MasterCard") %>
+    <%= submit_tag "Filter Results", :name => nil %>
+  </p>
+</form>

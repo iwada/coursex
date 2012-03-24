@@ -4,7 +4,7 @@ class EmployeesController < ApplicationController
    before_filter :admin_user, :only => [:destroy,:index]
   def index
     @title = "Employees Listing"
-    @employee =  Employee.page(params[:page]).per(3)
+    @employee =  Employee.search(params[:search]).page(params[:page]).per(3)
   end
 
   def dashboard

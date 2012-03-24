@@ -17,13 +17,20 @@ class User < ActiveRecord::Base
 #end
 
   attr_accessible :email, :password, :password_confirmation
+  attr_accessor  :validatepin
 
   validates_confirmation_of :password
   validates_presence_of :password, :on => :create
   validates_presence_of :email
   validates_uniqueness_of :email
 
-
+  def self.search(search)
+    if search
+      where('email LIKE ? ', "%#{search}%")
+    else
+      scoped
+    end
+  end
 
 
 end

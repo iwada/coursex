@@ -1,0 +1,48 @@
+<div class="row-fluid" >
+
+  <%= render "sidebar" %>
+
+  <div class="span9">
+    <div class="hero-unit">
+
+         <%= render 'accesssearch' %>
+        <table class="zebra-striped" id="sortTableExample">
+          <thead>
+          <tr>
+            <th> ID</th>
+            <th> Pin Status</th>
+            <th> Pin Value</th>
+            <th> Created on</th>
+            <th> Used on</th>
+            <th></th>
+
+          </tr>
+          </thead>
+          <tbody>
+          <% @accesspin.each do |accesspin| %>
+
+              <tr>
+                <td>CS-<%= accesspin.id %></td>
+                <td><%= showText(accesspin.status)%></td>
+                <td><%= accesspin.value %></td>
+                <td><%= accesspin.created_at.strftime("%d %b. %Y") %></td>
+                <td><%= usedon(accesspin.value) %></td>
+
+                               <td><%= link_to 'Destroy', accesspin, :confirm => 'Are you sure?',
+                                :method => :delete , :class => 'btn btn-mini btn-danger'%></td >
+
+
+          <% end %>
+          </tr>
+          </tbody>
+        </table>
+        <%= paginate @accesspin %>
+
+
+    </div>
+  </div>
+</div>
+
+<!--</div> Start-->
+
+

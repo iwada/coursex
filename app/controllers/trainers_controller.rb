@@ -12,7 +12,7 @@ class TrainersController < ApplicationController
   end
   def index
     @title =" Trainers Listing"
-    @trainer = Trainer.page(params[:page]).per(3)
+    @trainer = Trainer.search(params[:search]).page(params[:page]).per(3)
   end
 
   def edit

@@ -2,7 +2,7 @@ class BranchesController < ApplicationController
 
   def index
     @title = "Branch Listing"
-    @branch =  Branch.order("name").page(params[:page]).per(5)
+    @branch =  Branch.search(params[:search]).order("name").page(params[:page]).per(5)
   end
 
   def dashboard

@@ -6,7 +6,7 @@ class UsersController < ApplicationController
 
   def index
     @title = "User Listing"
-    @user =  User.order("email").page(params[:page]).per(3)
+    @user =  User.search(params[:search]).order("email").page(params[:page]).per(3)
   end
 
   def new
@@ -16,10 +16,12 @@ class UsersController < ApplicationController
 
   def create
     @user = User.new(params[:user])
-    if @user.save
-      redirect_to root_url, :notice => "Signed up, Awaiting Admin Approval"
+    @avaliable = Accesspin.find_by_value(params[:user][:validatepin])
+    if @avaliable and @user.save
+      redirect_to root_url, :notice => "Signed up, Awaiting Admin Approval.Please check Your Email"
     else
-      render :new
+     flash.now.notice = "Please Check the Access Pin You Entered"
+     render :new
     end
   end
 

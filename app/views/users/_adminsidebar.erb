@@ -2,20 +2,26 @@
   <div class="well sidebar nav">
     <ul class="nav nav-list">
       <li class="nav header"></li>
-      <li class= "<%= is_active?("index") %>" ><%=link_to "Home", users_path%></li>
-      <li class= "<%= is_active?("new") %>" ><%=link_to "Create User", new_user_path%></li>
-      <li class="nav-header">Recently Registered</li>
-      <li><a href="#">User 1</a></li>
-      <li><a href="#">User 2</a></li>
-      <li><a href="#">User 3</a></li>
-      <li class="nav-header">User ?</li>
-      <li><a href="#">User 1</a></li>
-      <li><a href="#">User 2</a></li>
-      <li><a href="#">User 2</a></li>
-      <li class="nav-header">User ?</li>
-      <li><a href="#">User </a></li>
-      <li><a href="#">User</a></li>
-      <li><a href="#">User</a></li>
+
+      <li class="nav-header">Quick Link</li>
+      <li class= "<%= is_active?("dashboard") %>"><%=link_to "Home", users_dashboard_path%></li>
+      <li class= "<%= is_active?("new") %>"><%=link_to "Course Dashboard", courses_dashboard_path%></li>
+      <li class= "<%= is_active?("new") %>"><%=link_to "Employee Dashboard", employees_dashboard_path%></li>
+      <li class= "<%= is_active?("new") %>"><%=link_to "Trainer Dashboard", trainers_dashboard_path%></li>
+      <li class= "<%= is_active?("new") %>"><%=link_to "Branch Dashboard", branches_dashboard_path%></li>
+      <li class= "<%= is_active?("new") %>"><%=link_to "Access Pins Dashboard", accesspins_dashboard_path%></li>
+      <li class="nav-header">Number of Courses</li>
+      <li><a href="#">1000 Compulsory Courses </a></li>
+      <li><a href="#">2000 Optional Courses</a></li>
+      <li class="nav-header">Number of Employees</li>
+      <li><a href="#">500 Level 1 Employees  </a></li>
+      <li><a href="#">300 Level 2 Employees</a></li>
+      <li><a href="#">500 Level 3 Employee</a></li>
+      <li class="nav-header">Number of Trainers</li>
+      <li><a href="#">200 Trainers taking Compulsory courses </a></li>
+      <li><a href="#">200 Trainers taking Optional courses </a></li>
+      <li class="nav-header">Summary</li>
+      <li><a href="#">Ten Users Online</a></li>
     </ul>
   </div>
 </div>

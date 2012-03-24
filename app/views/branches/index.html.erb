@@ -5,12 +5,16 @@
 
   <div class="span9">
     <div class="hero-unit">
+      <%=  render 'branchesfilter' %>
       <table class="zebra-striped" id="sortTableExample">
         <thead>
         <tr>
           <th> Branch ID:</th>
           <th>Branch Name</th>
-          <th>Branch Location </th>
+          <th>Branch Country </th>
+          <th>Branch State </th>
+          <th>Branch Address </th>
+
 
           <th></th>
           <th></th>
@@ -24,6 +28,8 @@
               <td>BR-<%= branch.id %></td>
               <td><%= branch.name %></td>
               <td><%= branch.country%></td>
+              <td><%= branch.branchstate%></td>
+              <td><%= branch.branchaddress%></td>
               <td><%= link_to 'More ',branch , :class => 'btn btn-mini'%></td>
               <td><%= link_to 'Edit', edit_branch_path(branch),:class => 'btn btn-mini' %></td>
 

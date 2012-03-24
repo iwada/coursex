@@ -1,10 +1,22 @@
+<script type="text/javascript ">
+    $(function ()
+    { $("#branchname").tooltip()
+        $("#branchcountry").tooltip()
+        $("#branchstate").tooltip()
+        $("#branchaddress").tooltip()
 
+
+    });
+</script>
 <div class="clearfix">
   <label>Branch Name</label>
   <div class="input">
     <%=f.text_field :name %>
-  </div>
+    <a href="#" id="branchname" rel="tooltip" data-original-title="Name by Which Branch is recognized">
+      <i class="icon-exclamation-sign"></i>
 
+    </a>
+  </div>
 </div>
 
 
@@ -12,6 +24,34 @@
   <label>Country</label>
   <div class="input">
     <%=f.select :country, options_for_select(countries) %>
+    <a href="#" id="branchcountry" rel="tooltip" data-original-title="Location of the Branch">
+      <i class="icon-exclamation-sign"></i>
+
+    </a>
   </div>
 </div>
+
+<div class="clearfix">
+  <label>State</label>
+  <div class="input">
+    <%=f.text_field :branchstate %>
+    <a href="#" id="branchstate" rel="tooltip" data-original-title="State Where Branch Is">
+      <i class="icon-exclamation-sign"></i>
+
+    </a>
+  </div>
+</div>
+
+
+<div class="clearfix">
+  <label>Branch Address</label>
+  <div class="input">
+    <%=f.text_field :branchaddress %>
+    <a href="#" id="branchaddress" rel="tooltip" data-original-title="Physical Address of the Branch">
+      <i class="icon-exclamation-sign"></i>
+
+    </a>
+  </div>
+</div>
+
 

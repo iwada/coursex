@@ -3,6 +3,7 @@
     <ul class="nav nav-list">
 
           <li class="nav header"><%= link_to " Admin Home", users_dashboard_path %></li>
+
       <li class= "<%= is_active?("dashboard") %>" ><%=link_to "Employee Dashboard", employees_dashboard_path%></li>
       <li class= "<%= is_active?("new") %>"><%=link_to "Create Employee", new_employee_path%></li>
       <li class= "<%= is_active?("index") %>"><%=link_to "View Employees", employees_path%></li>

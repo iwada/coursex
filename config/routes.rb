@@ -1,6 +1,7 @@
 Coursex::Application.routes.draw do
 
 
+
   get "logout" => "sessions#destroy", :as => "logout"
   get "login" => "sessions#new", :as => "login"
   get "signup" => "users#new", :as => "signup"
@@ -12,11 +13,10 @@ Coursex::Application.routes.draw do
   match 'branches/dashboard' , :to=> 'branches#dashboard'
   match 'users/dashboard' , :to=> 'users#dashboard'
   match 'employees/register' ,  :to=>'employees#register'
+  match 'accesspins/dashboard', :to=>'accesspins#dashboard'
 
 
 
-
-  resources :employees
   resources :users
   resources :sessions
   resources :password_resets
@@ -24,6 +24,9 @@ Coursex::Application.routes.draw do
   resources :trainers
   resources :courses
   resources :branches
+  resources :accesspins
+  resources :employees
+
 
 
 

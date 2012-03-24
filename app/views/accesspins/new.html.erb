@@ -1,0 +1,26 @@
+
+<div class="row-fluid" >
+
+  <%= render "sidebar" %>
+
+
+  <div class="span9">
+    <div class="hero-unit">
+
+
+      <%= form_for @accesspin ,:validate => true  do |f|%>
+
+          <%= render 'form' ,:f => f%>
+
+          <div class="actions">
+            <%= f.submit "Generate",:class=> "btn btn-primary" %>
+            <%= link_to 'Cancel', accesspins_path,:class => "btn" %>
+          </div>
+
+      <% end %>
+    </div>
+  </div>
+  <div class="span5">
+    <p></p>
+  </div>
+</div>

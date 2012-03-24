@@ -1,0 +1,8 @@
+<form action = "<%= branches_path %>" method = "get" id="search">
+  <p>
+    <%= text_field_tag :search, params[:search] %>
+    <%= submit_tag "Search", :name => nil %>  Or Filter by:
+    <%= select_tag "branchfilter", options_for_select([ "", "Branch with Most Employee", "Branch with Least Employees" ], "MasterCard") %>
+    <%= submit_tag "Filter Results", :name => nil %>
+  </p>
+</form>
