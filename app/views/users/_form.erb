@@ -4,6 +4,7 @@
         $("#email").tooltip()
         $("#password").tooltip()
         $("#passwordconfirm").tooltip()
+        $("#role").tooltip()
 
 
     });
@@ -53,3 +54,19 @@
     </a>
   </div>
 </div>
+
+
+<% if logged_in? and current_user.admin?  %>
+<div class="clearfix">
+  <label>Select User Role:</label>
+  <div class="input">
+    <%=f.select :temp, options_for_select(roles) %>
+    <a href="#" id="role" rel="tooltip" data-original-title="What kind of User is this?">
+      <i class="icon-exclamation-sign"></i>
+
+    </a>
+  </div>
+</div>
+<% end %>
+
+

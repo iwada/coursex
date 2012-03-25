@@ -16,7 +16,7 @@ class User < ActiveRecord::Base
 #def send_activation_success_email!
 #end
 
-  attr_accessible :email, :password, :password_confirmation
+  attr_accessible :email, :password, :password_confirmation,:temp
   attr_accessor  :validatepin
 
   validates_confirmation_of :password

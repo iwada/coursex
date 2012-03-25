@@ -20,20 +20,11 @@
     });
 </script>
 <div class="row-fluid" >
-
+    <%  if current_user.admin? %>
   <%= render "sidebar" %>
+      <% else %>
+   <%= render 'trainersidebar' %>
+       <% end %>
+ <%= render 'dashboardpanel'  %>
 
-
-  <div class="span9">
-    <div class="hero-unit" >
-      <div  id="orders_chart">
-
-      </div>
-
-
-    </div>
-  </div>
-  <div class="span5">
-    <p></p>
-  </div>
 </div>

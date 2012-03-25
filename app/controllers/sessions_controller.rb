@@ -25,7 +25,7 @@ class SessionsController < ApplicationController
   users = User.find_by_email(params[:email])
 
   if user
-    redirect_back_or_to gopath(params[:email])
+    redirect_back_or_to gopath(params[:email]) ,:notice => "You have successfully logged in"
     #redirect_back_or_to root_url, :notice => "Logged in!"
   elsif users != nil && users.activation_state === "pending"
     flash.now.alert = "Your Account is Inactive"
@@ -38,7 +38,7 @@ class SessionsController < ApplicationController
 
   def destroy
     logout
-    redirect_to root_url, :notice => "Logged out!"
+    redirect_to root_url, :notice => "You have been Logged out!"
   end
 
 end

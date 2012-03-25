@@ -1,7 +1,12 @@
 <div class="content" id="index">
 
-
-<%=link_to "", users_path,:style =>"background-image:url(/images/wunderman_thumbnail.gif)" %>
-<%=link_to "", users_path,:style =>"background-image:url(/images/wunderman_thumbnail.gif)" %>
-<%=link_to "", users_path,:style =>"background-image:url(/images/wunderman_thumbnail.gif)" %>
+ <% if logged_in? and current_user.admin? %>
+<%=link_to "", new_trainer_path,:style =>"background-image:url(/images/createtrainer.jpg)" %>
+<%=link_to "", trainers_path,:style =>"background-image:url(/images/edittrainer.jpg)" %>
+<%=link_to "", trainers_path,:style =>"background-image:url(/images/showtrainers.jpg)" %>
+      <% else%>
+      <%=link_to "", new_trainer_path,:style =>"background-image:url(/images/createtrainer.jpg)" %>
+      <%=link_to "", trainers_path,:style =>"background-image:url(/images/edittrainer.jpg)" %>
+      <%=link_to "", trainers_path,:style =>"background-image:url(/images/showtrainers.jpg)" %>
+  <% end %>
     </div>

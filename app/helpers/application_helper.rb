@@ -37,22 +37,23 @@ module ApplicationHelper
     trainer = Trainer.find_by_email(email)
     user = User.find_by_email(email)
     if user.admin? #is an Admin User
-
-      return @demo = users_dashboard_path
-    elsif !employee && user     #Has signed up but has not registered
+        return  users_dashboard_path
+    elsif !employee && user && user.temp == 1     #Has signed up but has not registered
      # @pre = "new_employee_path"
       return new_employee_path
 
     elsif employee           #Is an Employee
-
-      return  @demo = employees_dashboard_path
-
+      return  employees_dashboard_path
+    elsif !employee && !trainer && user
+      return new_trainer_path
     elsif trainer           #is a Trainer   ## NOTE: Trainer would never fill the registration form themselves
-
          return trainers_dashboard_path
-
     end
-    return "root_path"
+    return root_path
   end
+
+
+
+
 end
 

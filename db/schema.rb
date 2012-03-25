@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120324054425) do
+ActiveRecord::Schema.define(:version => 20120325084055) do
 
   create_table "accesspins", :force => true do |t|
     t.string   "value"
@@ -94,6 +94,7 @@ ActiveRecord::Schema.define(:version => 20120324054425) do
     t.datetime "activation_token_expires_at"
     t.boolean  "admin",                           :default => false
     t.boolean  "employee",                        :default => false
+    t.string   "temp"
   end
 
   add_index "users", ["activation_token"], :name => "index_users_on_activation_token"

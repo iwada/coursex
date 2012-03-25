@@ -1,8 +1,10 @@
 <div class="content" id="index">
+  
+  <% if logged_in? && current_user.admin?  %>
+  <%=link_to "", new_employee_path,:style =>"background-image:url(/images/createemployee.jpg)" %>
+  <%=link_to "", employees_path,:style =>"background-image:url(/images/editemployee.jpg)" %>
+  <%=link_to "", employees_path,:style =>"background-image:url(/images/showemployees.jpg)" %>
+      <%end %>
+      <%=link_to "", employees_register_path,:style =>"background-image:url(/images/courseregistration.jpg)" %>
 
-
-<%=link_to "", users_path,:style =>"background-image:url(/images/wunderman_thumbnail.gif)" %>
-<%=link_to "", users_path,:style =>"background-image:url(/images/wunderman_thumbnail.gif)" %>
-<%=link_to "", users_path,:style =>"background-image:url(/images/wunderman_thumbnail.gif)" %>
-
-    </div>
+</div>
