@@ -5,7 +5,7 @@
       <li class="nav-header"> Summary </li>
       <li class= "<%= is_active?("register") %>" ><%=link_to "Register for Course", employees_register_path%></li>
 
-      <li class= "<%= is_active?("show" ) %>" ><%=link_to "My Details", employee_path(current_employee.id)%></li>
+      <li class= "<%= is_active?("show" ) %>" ><%=link_to "My Details", employee_path(current_employee)%></li>
 
 
       <li class="nav-header">Your Eligible Courses</li>
