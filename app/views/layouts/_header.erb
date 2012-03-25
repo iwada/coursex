@@ -6,11 +6,12 @@
       <ul>
 
         <li class= "<%= is_active?("home") %>" ><%=link_to ".Home",  root_path %></li>
-        <li class= "<%= is_active?("contact") %>"> <%=link_to ".Contact Us ", contact_path %></li>
         <li class= "<%= is_active?("whoweare") %>"> <%=link_to ".Who We Are ", whoweare_path %></li>
         <li class= "<%= is_active?("whatwedo") %>"><%=link_to ".What we Do ", whatwedo_path  %> </li>
         <li class= "<%= is_active?("ourcourses") %>"><%=link_to ".Our Courses ", ourcourses_path  %> </li>
+        <li class= "<%= is_active?("contact") %>"> <%=link_to ".Contact Us ", contact_path %></li>
         <li class= "<%= is_active?("blog") %>"><%=link_to ".Blog", "http://coursex.posterous.com"  %> </li>
+
         <% if logged_in? %>
             <li class= "<%= is_active?("help") %>"><%=link_to "Documentation", help_path  %> </li>
         <% end %>
@@ -31,9 +32,6 @@
 
           <li><%=link_to "Logout" ,logout_path %></li>
           <li> <%= link_to "Change Password", new_password_reset_path%></li>
-
-
-
         </ul>
         </ul>
             <% end %>

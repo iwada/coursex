@@ -9,6 +9,7 @@ class ApplicationController < ActionController::Base
   include AccesspinsHelper
 
 
+
   protected
   def not_authenticated
     redirect_to login_path, :alert => "Please login to Access that Page."

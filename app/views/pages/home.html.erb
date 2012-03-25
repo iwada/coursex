@@ -17,6 +17,13 @@
       <p><a class="btn btn-primary btn-large">Learn more &raquo;</a></p>
     </div>
 
+    <% if logged_in? %>
+    <div class="span5">Ankit where is Content   sdsdsdsdsdsdsdsdsd
+      dsdsdAnkit where is Content  Ankit where is Content
+      <p><a class="btn btn-primary btn-large">Learn more &raquo;</a></p>
+    </div>
+        <% end %>
+    <% if !logged_in? %>
     <div class="span5">
       <%= form_tag sessions_path, :class=>"welllogin form-inline" do %>
           <span class="help-inline">UserName(Email)</span>
@@ -29,5 +36,6 @@
           </div>
       <% end %>
     </div>
+        <% end %>
 </div>
     </div>

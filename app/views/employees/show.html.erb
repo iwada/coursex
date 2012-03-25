@@ -53,9 +53,12 @@
 
       </table>
             </fieldset>
-      <%= link_to 'Edit employee', edit_employee_path(@employee),:class=>"btn btn-primary" %>
+      <%= link_to 'Edit Details', edit_employee_path(@employee),:class=>"btn btn-primary" %>
+      <% if current_user.admin? %>
       <%= link_to "Delete employee" , @employee, :method =>:delete,:confirm =>"You Sure?",
                   :title => "Delete {@employee.name}",:class => "btn btn-danger" %>
+
+          <% end %>
       <%= link_to 'Cancel', employees_dashboard_path,:class => "btn" %>
     </div>
   </div>
