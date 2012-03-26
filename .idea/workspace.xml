@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41934c2c-d224-404e-954e-c35f7923737e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/trainers/new.html.erb" afterPath="$PROJECT_DIR$/app/views/trainers/new.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/trainers/_dashboardpanel.erb" afterPath="$PROJECT_DIR$/app/views/trainers/_dashboardpanel.erb" />
     </list>
     <ignored path="coursex.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -51,10 +51,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="new.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="new.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/trainers/new.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="6" selection-start="582" selection-end="582" vertical-scroll-proportion="0.62152135">
+            <state line="26" column="6" selection-start="582" selection-end="582" vertical-scroll-proportion="-12.884615">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_dashboardpanel.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/trainers/_dashboardpanel.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="44" selection-start="572" selection-end="582" vertical-scroll-proportion="0.28385898">
               <folding />
             </state>
           </provider>
@@ -105,15 +114,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dashboard.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/trainers/dashboard.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="1.9615384">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindManager">
@@ -131,7 +131,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/helpers/application_helper.rb" />
         <option value="$PROJECT_DIR$/app/views/employees/_dashboardpanel.erb" />
         <option value="$PROJECT_DIR$/app/views/users/_form.erb" />
         <option value="$PROJECT_DIR$/app/views/trainers/dashboard.html.erb" />
@@ -147,6 +146,7 @@
         <option value="$PROJECT_DIR$/app/helpers/trainers_helper.rb" />
         <option value="$PROJECT_DIR$/app/controllers/trainers_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/trainers/new.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/trainers/_dashboardpanel.erb" />
       </list>
     </option>
   </component>
@@ -909,13 +909,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/models/course.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="21" selection-start="516" selection-end="516" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/user.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="45" selection-start="79" selection-end="79" vertical-scroll-proportion="0.0">
@@ -1016,7 +1009,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/trainers/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="6" selection-start="582" selection-end="582" vertical-scroll-proportion="0.62152135">
+        <state line="26" column="6" selection-start="582" selection-end="582" vertical-scroll-proportion="-12.884615">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/trainers/_dashboardpanel.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="44" selection-start="572" selection-end="582" vertical-scroll-proportion="0.28385898">
           <folding />
         </state>
       </provider>
