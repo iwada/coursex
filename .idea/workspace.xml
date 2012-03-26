@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41934c2c-d224-404e-954e-c35f7923737e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/employees_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/employees_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/application_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/application_helper.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/trainers/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/trainers/edit.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/trainers/show.html.erb" afterPath="$PROJECT_DIR$/app/views/trainers/show.html.erb" />
     </list>
     <ignored path="coursex.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,10 +33,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application_helper.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="application_helper.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="6" selection-start="1209" selection-end="1209" vertical-scroll-proportion="0.0">
+            <state line="40" column="39" selection-start="927" selection-end="927" vertical-scroll-proportion="0.39285713">
               <folding />
             </state>
           </provider>
@@ -56,10 +51,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/trainers/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="66" column="37" selection-start="1447" selection-end="1447" vertical-scroll-proportion="0.44674557">
+            <state line="66" column="37" selection-start="1447" selection-end="1447" vertical-scroll-proportion="-5.8076925">
               <folding />
             </state>
           </provider>
@@ -149,9 +144,9 @@
         <option value="$PROJECT_DIR$/app/views/employees/edit.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/employees_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
-        <option value="$PROJECT_DIR$/app/helpers/application_helper.rb" />
         <option value="$PROJECT_DIR$/app/views/trainers/edit.html.erb" />
         <option value="$PROJECT_DIR$/app/views/trainers/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/helpers/application_helper.rb" />
       </list>
     </option>
   </component>
@@ -1032,13 +1027,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="6" selection-start="1209" selection-end="1209" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/trainers/edit.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="50" selection-start="511" selection-end="511" vertical-scroll-proportion="-10.461538">
@@ -1048,7 +1036,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/trainers/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="37" selection-start="1447" selection-end="1447" vertical-scroll-proportion="0.44674557">
+        <state line="66" column="37" selection-start="1447" selection-end="1447" vertical-scroll-proportion="-5.8076925">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="39" selection-start="927" selection-end="927" vertical-scroll-proportion="0.39285713">
           <folding />
         </state>
       </provider>
