@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41934c2c-d224-404e-954e-c35f7923737e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/trainers_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/trainers_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/trainers_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/trainers_helper.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/course.rb" afterPath="$PROJECT_DIR$/app/models/course.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_header.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_header.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/pages/home.html.erb" afterPath="$PROJECT_DIR$/app/views/pages/home.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/trainers/_trainersidebar.erb" afterPath="$PROJECT_DIR$/app/views/trainers/_trainersidebar.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/trainers/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/trainers/edit.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/trainers/new.html.erb" afterPath="$PROJECT_DIR$/app/views/trainers/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/trainers/show.html.erb" afterPath="$PROJECT_DIR$/app/views/trainers/show.html.erb" />
     </list>
     <ignored path="coursex.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -65,7 +54,7 @@
       <file leaf-file-name="new.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/trainers/new.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="1" selection-start="576" selection-end="576" vertical-scroll-proportion="0.62152135">
+            <state line="26" column="6" selection-start="582" selection-end="582" vertical-scroll-proportion="0.62152135">
               <folding />
             </state>
           </provider>
@@ -1027,7 +1016,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/trainers/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="1" selection-start="576" selection-end="576" vertical-scroll-proportion="0.62152135">
+        <state line="26" column="6" selection-start="582" selection-end="582" vertical-scroll-proportion="0.62152135">
           <folding />
         </state>
       </provider>
