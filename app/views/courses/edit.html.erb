@@ -10,6 +10,7 @@
           <%= render 'form' ,:f => f%>
 
           <%= f.submit :class=> "btn btn-primary" %>
+
           <%= link_to "Delete Course" , @course, :method =>:delete,:confirm =>"You Sure?",
                       :title => "Delete #{@course.name}",:class => "btn btn-danger" %>
           <%= link_to 'Cancel', courses_path,:class => "btn" %>

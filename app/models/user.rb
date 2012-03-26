@@ -1,10 +1,12 @@
 class User < ActiveRecord::Base
 
 
+
   has_many :trainers  ,:dependent => :destroy
   has_many :employees ,:dependent => :destroy
   belongs_to :branch
   authenticates_with_sorcery!
+  before_save :default_values
 
 
 
@@ -31,6 +33,12 @@ class User < ActiveRecord::Base
       scoped
     end
   end
+
+  private
+  def default_values
+    self.temp ||= '0'
+  end
+
 
 
 end

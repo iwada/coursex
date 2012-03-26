@@ -38,7 +38,7 @@ module ApplicationHelper
     user = User.find_by_email(email)
     if user.admin? #is an Admin User
         return  users_dashboard_path
-    elsif !employee && user && user.temp == 1     #Has signed up but has not registered
+    elsif   !employee && user && user.temp != 1     #Has signed up but has not registered
      # @pre = "new_employee_path"
       return new_employee_path
 

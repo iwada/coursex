@@ -12,8 +12,10 @@
           <%= render 'form' ,:f => f%>
 
           <%= f.submit :class=> "btn btn-primary" %>
+          <% if current_user.admin? %>
           <%= link_to "Delete employee" , @employee, :method =>:delete,:confirm =>"You Sure?",
                       :title => "Delete #{@employee.firstname}",:class => "btn btn-danger" %>
+              <% end %>
           <%= link_to 'Cancel', employees_dashboard_path,:class => "btn" %>
 
       <% end %>
