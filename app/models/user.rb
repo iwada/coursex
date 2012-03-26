@@ -2,8 +2,8 @@ class User < ActiveRecord::Base
 
 
 
-  has_many :trainers  ,:dependent => :destroy
-  has_many :employees ,:dependent => :destroy
+  has_many :trainers
+  has_many :employees
   belongs_to :branch
   authenticates_with_sorcery!
   before_save :default_values

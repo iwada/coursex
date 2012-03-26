@@ -61,7 +61,7 @@ class EmployeesController < ApplicationController
     if @employees.save and current_user.admin?
       redirect_to employees_dashboard_path , :notice => 'Employee successfully Registered'
     elsif @employees.save and !current_user.admin?
-      redirect_to root_path, :notice => 'You have been successfully Registered'
+      redirect_to employees_dashboard_path, :notice => 'You have been successfully Registered'
     else
       flash.now.alert = "Oops, Something went wrong"
       render :new
