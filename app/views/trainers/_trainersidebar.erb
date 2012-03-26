@@ -2,22 +2,23 @@
   <div class="well sidebar nav">
     <ul class="nav nav-list">
 
-      <li class= "<%= is_active?("index") %>" ><%=link_to "Home", trainers_path%></li>
+      <li class= "<%= is_active?("dashboard") %>" ><%=link_to "My Dashboard", trainers_dashboard_path%></li>
+      <li class= "<%= is_active?("attendance") %>" ><%=link_to "Take Attendance", trainers_path%></li>
+      <li class= "<%= is_active?("show") %>" ><%=link_to "My Details", trainer_path(current_trainer)%></li>
+      <li class= "<%= is_active?("print") %>" ><%=link_to "Print Student List", trainer_path(current_trainer)%></li>
 
-      <li class="nav-header"> Courses Registered for</li>
+      <li class="nav-header"> Course(s) You Handle</li>
 
-      <li><a href="#"><%=lastthree %></a></li >
-      <li class="nav-header">Avaliable Courses</li>
-      <li><a href="#">Course 1</a></li>
-      <li><a href="#">Course 2</a></li>
-      <li><a href="#">Course 3 </a></li>
+      <li><a href="#"><%= handledcourses %></a></li >
+
+      <li class="nav-header">Courses Due Soon</li>
+      <li><a href="#">Course 1 Due 23rd April 2012</a></li>
+      <li><a href="#">Course 1 Due 23rd April 2012</a></li>
+      <li><a href="#">Course 1 Due 23rd April 2012</a></li>
+
+
       <li class="nav-header">Announcement</li>
-      <li><a href="#">I Love Jesus</a></li>
-      <li class="nav-header">Trainer Overview</li>
-      <li><a href="#">Level 1 Trainers: <%=level1courses %>  </a></li>
-      <li><a href="#">Level 2 Trainers: <%=level2courses %>  </a></li>
-      <li><a href="#">Optional Trainers:<%= optional %></a></li>
-      <li><a href="#">I Love Jesus</a></li>
+      <li><a href="#">You currently have no Announcements</a></li>
     </ul>
   </div>
 </div>

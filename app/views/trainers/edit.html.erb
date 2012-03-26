@@ -10,8 +10,10 @@
           <%= render 'form' ,:f => f%>
 
           <%= f.submit :class=> "btn btn-primary" %>
+          <% if current_user.admin? %>
           <%= link_to "Delete User" , @trainer, :method =>:delete,:confirm =>"You Sure?",
                       :title => "Delete" ,:class => "btn btn-danger" %>
+             <% end %>
           <%= link_to 'Cancel', trainers_path,:class => "btn" %>
 
       <% end %>

@@ -14,7 +14,7 @@ class Course < ActiveRecord::Base
 
   has_many :progresses
   has_many :employees, :through => :progresses
-
+  belongs_to :trainer
 
   def self.search(search)
     if search

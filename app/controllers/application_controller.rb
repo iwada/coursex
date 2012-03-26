@@ -7,6 +7,7 @@ class ApplicationController < ActionController::Base
   include CoursesHelper
   include EmployeesHelper
   include AccesspinsHelper
+  include TrainersHelper
 
 
 

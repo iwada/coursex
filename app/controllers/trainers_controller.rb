@@ -1,6 +1,8 @@
 class TrainersController < ApplicationController
   skip_before_filter :require_login, :only => [ :new,:create,:activate] #put here to avoid Login
-  before_filter :admin_user, :only => [:index,:update]
+  before_filter :admin_user, :only => [:index]
+  before_filter :correct_trainer,:only =>[:show,:edit]
+
 
   def new
     @title = "New Trainer Registration"
@@ -23,8 +25,8 @@ class TrainersController < ApplicationController
   def update
     @trainer= Trainer.find(params[:id])
     if @trainer.update_attributes(params[:trainer])
+    redirect_to trainers_dashboard_path,:notice=>"Update Successfull"
 
-      redirect_to trainers_path,:notice=>"Update Successfull"
     else
       flash.now.alert = "Error Updating"
       render 'edit'
@@ -62,6 +64,15 @@ class TrainersController < ApplicationController
       flash[:error] = "You do not have the Required Privilege to View that Page"
     end
   end
+
+  def correct_trainer
+    @trainer= Trainer.find(params[:id])
+    redirect_to(trainers_dashboard_path)  unless current_trainer?(@trainer) or current_user.admin?
+  end
+
+
+
+
 
 
 end

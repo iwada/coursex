@@ -1,7 +1,7 @@
 
 
 <div class="row-fluid" >
-  <%= render "sidebar" %>
+  <%= render "trainersidebar" %>
 
   <div class="span9">
     <div class="hero-unit">
@@ -60,8 +60,10 @@
 
       </table>
       <%= link_to 'Edit trainer', edit_trainer_path(@trainer),:class=>"btn btn-primary",:id=>"example" %>
-      <%= link_to "Delete trainer" , @trainer, :method =>:delete,:confirm =>"You Sure?",
+      <% if current_user.admin? %>
+      <%= link_to "Delete Trainer" , @trainer, :method =>:delete,:confirm =>"You Sure?",
                   :title => "Delete {@trainer.name}",:class => "btn btn-danger" %>
+       <% end %>
       <%= link_to 'Cancel', trainers_path,:class => "btn" %>
     </div>
   </div>

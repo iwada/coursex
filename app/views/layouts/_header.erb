@@ -26,7 +26,9 @@
 
           <% if current_user.admin? %>
           <li><%=link_to "Dashboard", users_dashboard_path %></li>
-                   <% else %>
+                   <% elsif current_user.temp? %>
+              <li><%=link_to "Dashboard",trainers_dashboard_path %></li>
+                <% else %>
               <li><%=link_to "Dashboard", employees_dashboard_path %></li>
              <% end %>
 

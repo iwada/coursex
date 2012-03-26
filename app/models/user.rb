@@ -1,8 +1,8 @@
 class User < ActiveRecord::Base
 
 
-  has_many :trainers
-  has_many :employees
+  has_many :trainers  ,:dependent => :destroy
+  has_many :employees ,:dependent => :destroy
   belongs_to :branch
   authenticates_with_sorcery!
 
