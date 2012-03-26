@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41934c2c-d224-404e-954e-c35f7923737e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/application_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/application_helper.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/users_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/users_helper.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/courses/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/courses/edit.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/employees/_form.erb" afterPath="$PROJECT_DIR$/app/views/employees/_form.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/employees/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/employees/edit.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/employees_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/employees_controller.rb" />
     </list>
     <ignored path="coursex.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,24 +24,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="users_helper.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/helpers/users_helper.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="14" selection-start="51" selection-end="51" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="49" selection-start="561" selection-end="561" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="application_helper.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
           <provider selected="true" editor-type-id="text-editor">
@@ -69,7 +46,12 @@
         <entry file="file://$PROJECT_DIR$/app/views/employees/new.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-              <folding />
+              <folding>
+                <marker date="1332652555291" expanded="true" signature="23:520" placeholder="..." />
+                <marker date="1332652555291" expanded="true" signature="192:512" placeholder="..." />
+                <marker date="1332652555291" expanded="true" signature="221:503" placeholder="..." />
+                <marker date="1332652555291" expanded="true" signature="333:475" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -110,10 +92,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="edit.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="edit.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/employees/edit.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="22" selection-start="613" selection-end="613" vertical-scroll-proportion="0.56771797">
+            <state line="3" column="65" selection-start="100" selection-end="100" vertical-scroll-proportion="-1.9615384">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="employees_controller.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/employees_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="63" column="22" selection-start="1890" selection-end="1890" vertical-scroll-proportion="0.8123894">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="trainers_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/trainers_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="60" column="39" selection-start="1500" selection-end="1500" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -136,7 +136,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/models/course.rb" />
         <option value="$PROJECT_DIR$/app/views/trainers/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/trainers/_trainersidebar.erb" />
         <option value="$PROJECT_DIR$/app/views/trainers/edit.html.erb" />
@@ -152,6 +151,7 @@
         <option value="$PROJECT_DIR$/app/views/employees/_form.erb" />
         <option value="$PROJECT_DIR$/app/views/courses/edit.html.erb" />
         <option value="$PROJECT_DIR$/app/views/employees/edit.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/employees_controller.rb" />
       </list>
     </option>
   </component>
@@ -936,20 +936,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/trainers/new.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="21" selection-start="381" selection-end="381" vertical-scroll-proportion="-7.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/trainers_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="22" selection-start="1322" selection-end="1322" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/trainers/dashboard.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="18" selection-start="729" selection-end="729" vertical-scroll-proportion="-16.346153">
@@ -1009,7 +995,12 @@
     <entry file="file://$PROJECT_DIR$/app/views/employees/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
+          <folding>
+            <marker date="1332652555291" expanded="true" signature="23:520" placeholder="..." />
+            <marker date="1332652555291" expanded="true" signature="192:512" placeholder="..." />
+            <marker date="1332652555291" expanded="true" signature="221:503" placeholder="..." />
+            <marker date="1332652555291" expanded="true" signature="333:475" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1043,7 +1034,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/employees/edit.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="22" selection-start="613" selection-end="613" vertical-scroll-proportion="0.56771797">
+        <state line="3" column="65" selection-start="100" selection-end="100" vertical-scroll-proportion="-1.9615384">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/trainers_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="39" selection-start="1500" selection-end="1500" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/employees_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="63" column="22" selection-start="1890" selection-end="1890" vertical-scroll-proportion="0.8123894">
           <folding />
         </state>
       </provider>
