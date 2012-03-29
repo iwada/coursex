@@ -3,8 +3,9 @@
     <ul class="nav nav-list">
 
       <li class= "<%= is_active?("dashboard") %>" ><%=link_to "My Dashboard", trainers_dashboard_path%></li>
-      <li class= "<%= is_active?("attendance") %>" ><%=link_to "Take Attendance", trainers_path%></li>
+
       <li class= "<%= is_active?("show") %>" ><%=link_to "My Details", trainer_path(current_trainer)%></li>
+      <li class= "<%= is_active?("attendance") %>" ><%=link_to "Manage Attendance ", trainers_attendance_path%></li>
       <li class= "<%= is_active?("print") %>" ><%=link_to "Print Student List", trainer_path(current_trainer)%></li>
 
       <li class="nav-header"> Course(s) You Handle</li>

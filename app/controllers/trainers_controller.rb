@@ -70,6 +70,10 @@ class TrainersController < ApplicationController
     redirect_to(trainers_dashboard_path)  unless current_trainer?(@trainer) or current_user.admin?
   end
 
+  def attendance
+
+  end
+
 
 
 
