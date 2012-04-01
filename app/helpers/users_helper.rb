@@ -12,6 +12,6 @@ module UsersHelper
   end
 
   def m(message)
-  return "data-original-title = " + message.to_s
+  return "data-original-title = " << message
   end
 end

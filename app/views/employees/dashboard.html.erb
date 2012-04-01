@@ -1,24 +1,4 @@
-<script type="text/javascript" charset="utf-8">
-    $(function () {
-        new Highcharts.Chart({
-            chart: { renderTo: 'orders_chart' },
-            type: 'bar',
-            title: { text: 'Employee Overview  ' },
-            xAxis: { type: 'datetime' },
-            yAxis: {
-                title: { text: 'Employees'}
-            },
-            series: [{
-                name:"Employee Pattern",
-                data: [1, 2, 5, 7, 3]
-            }] ,
-            series: [{
-                name:"Employee Pattern",
-                data: [1, 2, 5, 7, 3]
-            }]
-        });
-    });
-</script>
+
 <div class="row-fluid" >
    <% if logged_in? and current_user.admin? %>
   <%= render "sidebar" %>

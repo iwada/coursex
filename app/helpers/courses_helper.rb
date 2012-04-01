@@ -27,5 +27,10 @@ module CoursesHelper
       @coursename = "This is"
        end
   end
+
+  def sooncourses
+  Course.select(:name)
+  end
+
   end
 

@@ -1,9 +1,11 @@
 <script type="text/javascript ">
     $(function ()
     { $("#home").tooltip()
-        $("#email").tooltip()
-        $("#password").tooltip()
-        $("#passwordconfirm").tooltip()
+        $("#employeedb").tooltip()
+        $("#coursedb").tooltip()
+        $("#trainerdb").tooltip()
+        $("#acessdb").tooltip()
+        $("#branchdb").tooltip()
         $("#role").tooltip()
 
 
@@ -15,12 +17,12 @@
       <li class="nav header"></li>
 
       <li class="nav-header">Quick Link</li>
-      <li class= "<%= is_active?("dashboard")%>" id="home" <%= m('TakxddddesYou to Admin Home')  %>><%=link_to "Home", users_dashboard_path%></li>
-      <li class= "<%= is_active?("new") %>"><%=link_to "Course Dashboard", courses_dashboard_path%></li>
-      <li class= "<%= is_active?("new") %>"><%=link_to "Employee Dashboard", employees_dashboard_path%></li>
-      <li class= "<%= is_active?("new") %>"><%=link_to "Trainer Dashboard", trainers_dashboard_path%></li>
-      <li class= "<%= is_active?("new") %>"><%=link_to "Branch Dashboard", branches_dashboard_path%></li>
-      <li class= "<%= is_active?("new") %>"><%=link_to "Access Pins Dashboard", accesspins_dashboard_path%></li>
+      <li class= "<%= is_active?("dashboard")%>" data-original-title=" Takes you to the Admin Home " id="home" >  <%=link_to "Home", users_dashboard_path%> </li>
+      <li class= "<%= is_active?("new") %>" data-original-title=" Contains Courses Related Commands " id="coursedb"><%=link_to "Course Dashboard", courses_dashboard_path%></li>
+      <li class= "<%= is_active?("new") %>" data-original-title=" Contains Employee Related Commands " id="employeedb"><%=link_to "Employee Dashboard", employees_dashboard_path%></li>
+      <li class= "<%= is_active?("new") %>"  data-original-title=" Contains Trainers Related Commands " id="trainerdb"><%=link_to "Trainer Dashboard", trainers_dashboard_path%></li>
+      <li class= "<%= is_active?("new") %>" data-original-title=" Contains Branches Related Commands " id="branchdb"><%=link_to "Branch Dashboard", branches_dashboard_path%></li>
+      <li class= "<%= is_active?("new") %>"data-original-title=" Contains AccessPins Related Commands " id="acessdb"><%=link_to "Access Pins Dashboard", accesspins_dashboard_path%></li>
       <li class="nav-header">Number of Courses</li>
       <li><a href="#">1000 Compulsory Courses </a></li>
       <li><a href="#">2000 Optional Courses</a></li>

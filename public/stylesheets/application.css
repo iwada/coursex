@@ -2076,10 +2076,11 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
 }
 
 .field_with_errors .message {
-    color: #234209;
-    #padding-left: 5900px;
-    font-size: 12px;
+     color: #D00;
+    padding-left: 5px;
+    font-size: 12px
 }
+
 
 
 

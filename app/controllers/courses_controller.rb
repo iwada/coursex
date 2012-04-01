@@ -1,5 +1,6 @@
 class CoursesController < ApplicationController
   before_filter :admin_user , :only => [:index]
+  before_filter :admin_user
 
   def new
     @title = "Course Registratoin"

@@ -1,11 +1,11 @@
 <div class="span3">
   <div class="well sidebar nav">
     <ul class="nav nav-list">
-      <li class="nav header"><%= link_to "Admin Home", users_dashboard_path %></li>
+      <li class="nav header" data-original-title=" Takes you to admin home" id="home"><%= link_to "Admin Home", users_dashboard_path %></li>
 
-      <li class="<%= is_active?("dashboard") %>" ><%=link_to "Access Pin Dashboard", accesspins_dashboard_path %></li>
-      <li class="<%= is_active?("new") %>" ><%=link_to "Create Pins", new_accesspin_path %></li>
-      <li class="<%= is_active?("index") %>" ><%=link_to "Show Pins", accesspins_path %></li>
+      <li class="<%= is_active?("dashboard") %>" data-original-title=" Contains Aceess Pin Related Commands" id="acessdb" ><%=link_to "Access Pin Dashboard", accesspins_dashboard_path %></li>
+      <li class="<%= is_active?("new") %> "data-original-title=" Creates Access Pins" id="createpins" ><%=link_to "Create Pins", new_accesspin_path %></li>
+      <li class="<%= is_active?(" index") %>" data-original-title=" Show's all Access Pins" id="showpins" ><%=link_to "Show Pins", accesspins_path %></li>
 
       <li class="nav-header"> Total Number of Pins</li>
       <li class=""><a href="#"><%=totalpins %></a></li >
@@ -16,3 +16,15 @@
     </ul>
   </div>
 </div>
+
+
+<script type="text/javascript ">
+    $(function ()
+    { $("#home").tooltip()
+        $("#acessdb").tooltip()
+        $("#createpins").tooltip()
+        $("#showpins").tooltip()
+
+
+    });
+</script>

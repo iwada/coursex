@@ -1,10 +1,13 @@
+
+
 <div class="span3">
+
   <div class="well sidebar nav">
     <ul class="nav nav-list">
-      <li class="nav header"><%= link_to "Admin Home", users_dashboard_path %></li>
-      <li class="<%= is_active?("dashboard") %>" ><%=link_to "Course Dashboard", courses_dashboard_path %></li>
-      <li class= "<%= is_active?("new") %>"><%=link_to "New Course", new_course_path%></li>
-      <li class= "<%= is_active?("index") %>"><%=link_to "Show Courses", courses_path%></li>
+      <li class="nav header" data-original-title=" Takes you to admin home" id="home" ><%= link_to "Admin Home", users_dashboard_path %></li>
+      <li class="<%= is_active?("dashboard") %>" data-original-title=" Contains Course Related Command" id="coursedb"  ><%=link_to "Course Dashboard", courses_dashboard_path %></li>
+      <li class= "<%= is_active?("new") %>" data-original-title=" Creates a new Course" id="createcourse" ><%=link_to "New Course", new_course_path%></li>
+      <li class= "<%= is_active?("index") %>" data-original-title=" Shows all Courses" id="showcourse" ><%=link_to "Show Courses", courses_path%></li>
 
       <li class="nav-header"> Recently Created Courses</li>
        <li class=""><a href="#"><%=lastthree %></a></li >
@@ -17,10 +20,20 @@
       <li class="nav-header"> Courses Overview</li>
       <li><a href="#">Level 1 Courses  Avaliable   [ <%=level1courses %> ]  </a></li>
       <li><a href="#">Level 2 Courses Avaliable    [ <%=level2courses %> ]  </a></li>
-      <li><a href="#">Optional Courses Avaliable   [ <%= optional %> ] </a></li>
-     <li><a href="#">Comp. Courses Avaliable       [ <%= compulsory %> ] </a></li>
-
-
-    </ul>
+      <li><a href="#">Optional Courses Avaliable      [ <%= optional %> ] </a></li>
+     <li><a href="#">Comp. Courses Avaliable            [ <%= compulsory %> ] </a></li>
+   </ul>
   </div>
 </div>
+
+<script type="text/javascript ">
+    $(function ()
+    { $("#home").tooltip()
+        $("#coursedb").tooltip()
+        $("#createcourse").tooltip()
+        $("#showcourse").tooltip()
+
+
+    });
+</script>
+

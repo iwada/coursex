@@ -2,6 +2,7 @@ class EmployeesController < ApplicationController
   skip_before_filter :require_login, :only => [ :new,:create,:activate] #put here to avoid Login
   before_filter :correct_employee,:only =>[:show,:edit]
    before_filter :admin_user, :only => [:destroy,:index]
+
   def index
     @title = "Employees Listing"
     @employee =  Employee.search(params[:search]).page(params[:page]).per(3)
@@ -70,7 +71,8 @@ class EmployeesController < ApplicationController
 
   def correct_employee
     @employee = Employee.find(params[:id])
-    redirect_to(employees_dashboard_path)  unless current_employee?(@employee) or current_user.admin?
+    redirect_to employees_dashboard_path,:alert => "You do not have the Required Priviledge to view this page"  unless current_employee?(@employee) or current_user.admin?
+
   end
 
   def admin_user

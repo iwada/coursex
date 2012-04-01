@@ -1,4 +1,5 @@
 class BranchesController < ApplicationController
+  before_filter :admin_user
 
   def index
     @title = "Branch Listing"

@@ -56,11 +56,11 @@ end
 
   #match '/Who We Are', :to=>'pages#whoweare'
 
-  if (1 == 1)
+
     root :to=> 'pages#home'
-  else
-    root :to=>'pages#contact'
-  end
+
+
+
 
 
   # The priority is based upon order of creation:
