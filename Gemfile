@@ -7,6 +7,7 @@ gem "paperclip","2.4.5"
 gem 'pdfkit'
 gem "friendly_id", "~> 4.0.1"
 gem "railroady"
+gem 'aws-s3'
 gem 'aws-sdk'
 
 
