@@ -10,7 +10,7 @@ class Employee < ActiveRecord::Base
       #:bucket => "coursexdata",
   :s3_credentials => {
       :access_key_id => ENV['AWS_ACCESS_KEY_ID'],
-      :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
+      :secret_access_key => ENV['AWS_SECRET-ACCESS_KEY']
   }
 
 # extend FriendlyId
