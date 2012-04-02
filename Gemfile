@@ -3,10 +3,12 @@ source 'http://rubygems.org'
 gem 'rails', '3.0.9'
 gem 'sorcery'
 gem "meta_where"
-gem "paperclip", "~> 2.0"
+gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
 gem 'pdfkit'
 gem "friendly_id", "~> 4.0.1"
 gem "railroady"
+gem 'aws-s3'
+gem 'aws-sdk'
 
 
 

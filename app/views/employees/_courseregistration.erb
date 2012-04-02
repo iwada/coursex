@@ -1,3 +1,17 @@
+<script type="text/javascript ">
+    $(function ()
+    { $("#firstname").tooltip()
+        $("#lastname").tooltip()
+        $("#mobile").tooltip()
+        $("#level").tooltip()
+        $("#sex").tooltip()
+        $("#email").tooltip()
+        $("#doj").tooltip()
+        $("#employee").tooltip()
+
+
+    });
+</script>
 <%= form_for @employee, :url => {:action =>"register"} do |f|%>
 
 
@@ -6,7 +20,10 @@
       <div class="input">
 
         <%=  f.select :id, Course.all.select{|x| not @employee.courses.include?(x)}.collect{|x|[x.name,x.id]} %>
-        <div id="pro1" class="hide" >Currnelty Selected:<%= current_user.admin?   %></div>
+        <a href="#" id="employee" rel="tooltip" data-original-title="Name as on Official document">
+
+        </a>
+        <div id="pro1" class="hide" >Currnelty Selected:</div>
         <div id="pro2" class="hide" >Product 2</div>
 
 

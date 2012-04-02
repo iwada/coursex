@@ -10,7 +10,8 @@
         <tbody>
 
         <tr>
-
+          <td ><%= image_tag @trainer.avatar.url(:small) %></td >
+          <td ></td>
         </tr>
         <tr>
           <td >ID</td>
@@ -54,6 +55,8 @@
           <td >Date of Joining</td>
           <td ><%= @trainer.created_at.strftime("%d %b. %Y")%></td >
         </tr>
+
+
 
 
         </tbody>

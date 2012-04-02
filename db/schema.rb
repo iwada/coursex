@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120325084055) do
+ActiveRecord::Schema.define(:version => 20120402092118) do
 
   create_table "accesspins", :force => true do |t|
     t.string   "value"
@@ -57,6 +57,10 @@ ActiveRecord::Schema.define(:version => 20120325084055) do
     t.datetime "updated_at"
     t.string   "email"
     t.integer  "employee_id"
+    t.string   "avatar_file_name"
+    t.string   "avatar_content_type"
+    t.integer  "avatar_file_size"
+    t.datetime "avatar_updated_at"
   end
 
   create_table "progresses", :force => true do |t|
@@ -76,6 +80,10 @@ ActiveRecord::Schema.define(:version => 20120325084055) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "email"
+    t.string   "avatar_file_name"
+    t.string   "avatar_content_type"
+    t.integer  "avatar_file_size"
+    t.datetime "avatar_updated_at"
   end
 
   create_table "users", :force => true do |t|

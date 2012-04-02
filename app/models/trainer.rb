@@ -6,6 +6,9 @@ class Trainer < ActiveRecord::Base
   has_many     :courses
 
 
+  has_attached_file :avatar, :styles => { :small => "150x150>" }
+
+
   def self.search(search)
     if search
       where('firstname LIKE ? OR lastname like ?', "%#{search}%","%#{search}%")

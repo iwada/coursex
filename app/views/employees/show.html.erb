@@ -12,6 +12,10 @@
 
       <table>
         <tbody>
+        <tr>
+           <td ><%= image_tag @employee.avatar.url(:small) %></td >
+          <td ></td>
+        </tr>
 
         <tr>
           <td >First Name</td>
@@ -47,6 +51,8 @@
           <td >Date of Joining</td>
           <td ><%= @employee.created_at.strftime("%d %b. %Y")%></td >
         </tr>
+
+
 
 
         </tbody>
