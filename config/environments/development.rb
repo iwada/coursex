@@ -33,5 +33,9 @@ Coursex::Application.configure do
 
   # Only use best-standards-support built into browsers
   config.action_dispatch.best_standards_support = :builtin
+
+  ENV['S3_KEY'] = "AKIAIKP5VNF5WFEYIR7A"
+  ENV['S3_SECRET'] ="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"
+  ENV['S3_BUCKET'] = "coursexdata"
 end
 
