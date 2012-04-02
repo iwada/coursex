@@ -53,4 +53,9 @@ Coursex::Application.configure do
 
   # Send deprecation notices to registered listeners
   config.active_support.deprecation = :notify
+
+
+  ENV['S3_KEY'] = "AKIAIKP5VNF5WFEYIR7A"
+  ENV['S3_SECRET'] ="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"
+  ENV['S3_BUCKET'] = "coursexdata"
 end
