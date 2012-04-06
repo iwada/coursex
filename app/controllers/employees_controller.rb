@@ -12,6 +12,11 @@ class EmployeesController < ApplicationController
     @title = "Employee Details"
   end
 
+  def results
+    @title = "Your Results"
+  end
+
+
   def new
     @title = "New Employee Registration"
     @employee = Employee.new

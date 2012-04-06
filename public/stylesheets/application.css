@@ -2081,6 +2081,123 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
     font-size: 12px
 }
 
+/**************Start of footer ******************/
+ #footer{
+    width:960px;
+    margin: 40px auto 40px;
+    height:90px;
+    text-align:center;
+    color:#887450;
+    line-height:90px;
+    overflow:hidden;
+}
+
+ #footer ul{
+    margin:0;
+    padding:0;
+    list-style-type:none;
+    overflow:hidden;
+}
+
+#footer ul li.first{
+    width:430px;
+    float:left;
+}
+
+
+ #footer ul li.first ul{
+    margin:0;
+    padding:0;
+    list-style-type:none;
+}
+ #footer ul li.first ul li{
+    float:left;
+    padding:0 10px;
+    width:auto;
+}
+
+ #footer ul li.first ul li a{
+    display:inline-block;
+    text-decoration:none;
+    color:#887450;
+    font-family:Arial;
+    font-size:14px;
+}
+
+
+ #footer ul li.first ul li a:hover{
+
+    color:#887450;
+}
+
+ #footer ul li.first ul{
+    margin:0;
+    padding:0;
+    list-style-type:none;
+}
+
+#footer ul li{
+    width:210px;
+    float:left;
+}
+
+ #footer ul li a:hover{
+    opacity:0.4;
+    filter:alpha(opacity=40);
+}
+
+ #footer ul li span{
+    float:left;
+    margin-right:10px;
+}
+
+
+ #footer ul li a.facebook{
+
+    background: url("../images/icon.gif");
+    background-position: 0 0;
+    display:block;
+    width:25px;
+    height:25px;
+    text-decoration:none;
+    position:relative;
+    top:32px;
+    float:left;
+    margin-right:10px;
+
+}
+
+#footer ul li a.twitter{
+
+
+    background: url("../images/icon.gif");
+    background-position: 0 -75px;
+    float:left;
+    width:38px;
+    height:26px;
+    text-decoration:none;
+    position:relative;
+    top:32px;
+    margin-right:10px;
+}
+
+
+
+ #footer ul li.last{
+    width:300px;
+    float:left;
+    text-align:right;
+}
+
+ #footer ul li.last span{
+    width:300px;
+    float:left;
+    text-align:right;
+}
+
+
+
+
 
 
 

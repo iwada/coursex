@@ -1,9 +1,10 @@
 <div class="row-fluid" >
-          <% if current_user.admin? %>
+  <% if current_user.admin? %>
       <%= render 'sidebar'  %>
-      <% else %>
+  <% else %>
       <%= render 'trainersidebar' %>
-      <% end %>
+  <% end %>
+
 
   <div class="span9" >
     <div class="hero-unit">
@@ -17,5 +18,4 @@
     </div>
 
   </div>
-
-</div>
+  </div>

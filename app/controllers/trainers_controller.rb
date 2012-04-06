@@ -33,6 +33,16 @@ class TrainersController < ApplicationController
     end
   end
 
+  def results
+   @title = "Upload Students Results"
+  end
+
+  def attendance
+      @title = "Manage Student's Attendance'"
+  end
+
+
+
   def destroy
     if Trainer.find(params[:id]).destroy
       redirect_to trainers_path, :notice => "Employee Deleted Successfully"
@@ -70,9 +80,6 @@ class TrainersController < ApplicationController
     redirect_to(trainers_dashboard_path)  unless current_trainer?(@trainer) or current_user.admin?
   end
 
-  def attendance
-
-  end
 
 
 

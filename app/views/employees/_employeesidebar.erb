@@ -6,6 +6,8 @@
       <li class= "<%= is_active?("register") %>" data-original-title=" Register for your Eligiible Courses" id="register"><%=link_to "Register for Course", employees_register_path%></li>
 
       <li class= "<%= is_active?("show" ) %> "data-original-title="View and Edit your Details" id="details" ><%=link_to "My Details", employee_path(current_employee)%></li>
+      <li class= "<%= is_active?("results" ) %> "data-original-title="View and Print your Results" id="results" ><%=link_to "My Results", employees_results_path%></li>
+
 
 
       <li class="nav-header">Your Eligible Courses</li>
@@ -28,6 +30,7 @@
     { $("#home").tooltip()
         $("#register").tooltip()
         $("#details").tooltip()
+        $("#results").tooltip()
 
 
     });

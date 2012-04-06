@@ -14,6 +14,8 @@ Coursex::Application.routes.draw do
   match 'users/dashboard' , :to=> 'users#dashboard'
   match 'employees/register' ,  :to=>'employees#register'
   match 'trainers/attendance' ,  :to=>'trainers#attendance'
+  match 'trainers/results' ,  :to=>'trainers#results'
+  match 'employees/results' ,  :to=>'employees#results'
 
   match 'accesspins/dashboard', :to=>'accesspins#dashboard'
 

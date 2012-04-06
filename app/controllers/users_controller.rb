@@ -16,8 +16,8 @@ class UsersController < ApplicationController
 
   def create
     @user = User.new(params[:user])
-    @avaliable = Accesspin.find_by_value(params[:user][:validatepin])
-    if @avaliable and @user.save
+    #@avaliable = Accesspin.find_by_value(params[:user][:validatepin])
+    if @user.save
       redirect_to root_url, :notice => "Signed up, Awaiting Admin Approval.Please check Your Email"
     else
      flash.now.notice = "Please Check the Access Pin You Entered"
@@ -74,11 +74,9 @@ class UsersController < ApplicationController
   end
 
   def admin_user
-    if logged_in?
-      redirect_to (root_path), :error => "You do not have the Required Privilege to View that Page" unless current_user.admin?
-      #flash[:alert] = "You do not have the Required Privilege to View that Page"
-    else
+    if logged_in?  and !current_user.admin?
       redirect_to root_path
+      flash[:error] = "You do not have the Required Privilege to View that Page"
     end
   end
 
