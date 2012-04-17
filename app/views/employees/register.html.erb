@@ -4,8 +4,10 @@
 
 
   <div class="span9">
+    <%= form_for @employee, :url => {:action =>"register"} do |f|%>
 
     <% @temp.each do |temp|%>
+
     <div class="hero-unit">
       <div class="span5">
         <%= temp.name %>
@@ -13,10 +15,13 @@
       <div class="span5">
       <%= temp.description %> <br>
       <%= temp.description %>
-      <%= temp.description %>
+      <%= temp.description %> <br />
+        <%= f.submit "Register",:class=> "btn btn-primary" ,:disabled => true %>
+        <%= link_to 'Cancel', employees_dashboard_path,:class => "btn" %>
       </div>
 
     </div>
+    <% end %>
     <% end %>
 
 

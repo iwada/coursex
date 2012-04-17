@@ -23,7 +23,7 @@ class EmployeesController < ApplicationController
   end
 
   def register
-     @temp = Course.all
+     @temp = Course.where(:category_of_course=> 4 )
     @employee= Employee.new(params[:employee])
     @title = "Course Registration"
     if request.post?
