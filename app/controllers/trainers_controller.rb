@@ -12,6 +12,7 @@ class TrainersController < ApplicationController
   def dashboard
     @title = "Trainer DashBoard"
   end
+
   def index
     @title =" Trainers Listing"
     @trainer = Trainer.search(params[:search]).page(params[:page]).per(3)
@@ -75,15 +76,17 @@ class TrainersController < ApplicationController
     end
   end
 
+  def print
+    @title ="Print List"
+  end
+
+  def mailout
+
+  end
+
   def correct_trainer
     @trainer= Trainer.find(params[:id])
     redirect_to(trainers_dashboard_path)  unless current_trainer?(@trainer) or current_user.admin?
   end
-
-
-
-
-
-
 
 end

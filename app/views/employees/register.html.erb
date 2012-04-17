@@ -12,11 +12,14 @@
       <div class="span5">
         <%= temp.name %>
       </div>
+
       <div class="span5">
-      <%= temp.description %> <br>
-      <%= temp.description %>
-      <%= temp.description %> <br />
-        <%= f.submit "Register",:class=> "btn btn-primary" ,:disabled => true %>
+
+        <%= f.text_field :temp, :value=>temp.description %>
+        <%= f.text_field :temp, :value=>temp.description %>
+        <%= f.text_field :temp, :value=>temp.description %> <br />
+
+        <%= submit_tag phrase(temp.id),:class=> "btn btn-primary" ,:disabled => false %>
         <%= link_to 'Cancel', employees_dashboard_path,:class => "btn" %>
       </div>
 

@@ -7,6 +7,7 @@
 
       <li class= "<%= is_active?("show" ) %> "data-original-title="View and Edit your Details" id="details" ><%=link_to "My Details", employee_path(current_employee)%></li>
       <li class= "<%= is_active?("results" ) %> "data-original-title="View and Print your Results" id="results" ><%=link_to "My Results", employees_results_path%></li>
+      <li class= "<%= is_active?("classes" ) %> "data-original-title="View and Print your Classes" id="classes" ><%=link_to "My Classes", employees_classes_path%></li>
 
 
 
@@ -31,6 +32,7 @@
         $("#register").tooltip()
         $("#details").tooltip()
         $("#results").tooltip()
+        $("#classes").tooltip()
 
 
     });

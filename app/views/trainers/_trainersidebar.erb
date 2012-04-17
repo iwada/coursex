@@ -6,8 +6,9 @@
 
       <li class= "<%= is_active?("show")  %>" data-original-title=" View and Edit your Details" id=details ><%=link_to "My Details", trainer_path(current_trainer)%></li>
       <li class= "<%= is_active?("attendance") %>" data-original-title=" Take Your Attendance" id="attendance"  ><%=link_to "Manage Attendance ", trainers_attendance_path%></li>
-      <li class= "<%= is_active?("print") %>" data-original-title=" Print your Student List" id="print" ><%=link_to "Print Student List", trainer_path(current_trainer)%></li>
+      <li class= "<%= is_active?("print") %>" data-original-title=" Print your Student List" id="print" ><%=link_to "Print Student List", trainers_print_path %></li>
       <li class= "<%= is_active?("results") %>" data-original-title=" Upload your Student result" id="upload" ><%=link_to "Upload Student Results", trainers_results_path %></li>
+      <li class= "<%= is_active?("mailout") %>" data-original-title=" Send mail to all Your Students" id="mailout" ><%=link_to "Contact Students", trainers_mailout_path %></li>
 
       <li class="nav-header"> Course(s) You Handle</li>
 

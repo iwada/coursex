@@ -41,4 +41,9 @@ class UserMailer < ActionMailer::Base
     @employee = employee
     mail(:to => employee.email,:subject =>"Course Registration Successful")
   end
+
+  def course_deregistered(employee)
+    @employee = employee
+    mail(:to => employee.email,:subject =>"You Have Successfully Deregistered for this Course")
+  end
 end

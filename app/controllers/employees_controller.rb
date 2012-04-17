@@ -16,6 +16,11 @@ class EmployeesController < ApplicationController
     @title = "Your Results"
   end
 
+  def classes
+    @title = "Your Classes"
+    @classes = Progress.where(:employee_id => current_employee.id)
+  end
+
 
   def new
     @title = "New Employee Registration"
@@ -23,14 +28,22 @@ class EmployeesController < ApplicationController
   end
 
   def register
-     @temp = Course.where(:category_of_course=> 4 )
+     @temp = Course.all
     @employee= Employee.new(params[:employee])
     @title = "Course Registration"
     if request.post?
+      if params['commit'] == "Register"
+       Progress.create(:course_id => params[:employee][:temp])
       UserMailer.course_registered(current_user).deliver
       redirect_to employees_dashboard_path , :notice => "You have successfully been Registered"
+
+    else
+      Progress.create(:course_id => params[:employee][:temp])
+      UserMailer.course_deregistered(current_user).deliver
+      redirect_to employees_dashboard_path , :notice => "You have successfully been Registered"
+      end
     end
-  end
+     end
 
   def edit
     @employee= Employee.find(params[:id])

@@ -15,7 +15,7 @@ class Employee < ActiveRecord::Base
 
 # extend FriendlyId
 #friendly_id :firstname
-
+  attr_accessor  :temp
 
   def fetchCourses
     @acourses = Course.all
