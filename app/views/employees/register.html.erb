@@ -4,8 +4,22 @@
 
 
   <div class="span9">
+
+    <% @temp.each do |temp|%>
     <div class="hero-unit">
-      <%= render 'courseregistration'  %>
+      <div class="span5">
+        <%= temp.name %>
+      </div>
+      <div class="span5">
+      <%= temp.description %> <br>
+      <%= temp.description %>
+      <%= temp.description %>
+      </div>
+
     </div>
+    <% end %>
+
+
   </div>
+
 </div>

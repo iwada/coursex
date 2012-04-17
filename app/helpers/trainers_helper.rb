@@ -9,6 +9,10 @@ module TrainersHelper
 
   end
 
+  def students
+
+  end
+
 
 
   def current_trainer?(trainer)

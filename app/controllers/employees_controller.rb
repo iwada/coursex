@@ -23,7 +23,7 @@ class EmployeesController < ApplicationController
   end
 
   def register
-    @course1 = Course.find(params[2]) unless params[:id].nil?
+     @temp = Course.all
     @employee= Employee.new(params[:employee])
     @title = "Course Registration"
     if request.post?
