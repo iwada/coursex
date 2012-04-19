@@ -14,4 +14,8 @@ module UsersHelper
   def m(message)
   return "data-original-title = " << message
   end
+
+  def courses
+
+  end
 end
