@@ -2,27 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41934c2c-d224-404e-954e-c35f7923737e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/large/1.jpg" afterPath="$PROJECT_DIR$/public/images/large/1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/large/2.jpg" afterPath="$PROJECT_DIR$/public/images/large/2.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/large/3.jpg" afterPath="$PROJECT_DIR$/public/images/large/3.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/large/4.jpg" afterPath="$PROJECT_DIR$/public/images/large/4.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/large/5.jpg" afterPath="$PROJECT_DIR$/public/images/large/5.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/large/6.jpg" afterPath="$PROJECT_DIR$/public/images/large/6.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/large/7.jpg" afterPath="$PROJECT_DIR$/public/images/large/7.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thumbs/1.jpg" afterPath="$PROJECT_DIR$/public/images/thumbs/1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thumbs/2.jpg" afterPath="$PROJECT_DIR$/public/images/thumbs/2.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thumbs/3.jpg" afterPath="$PROJECT_DIR$/public/images/thumbs/3.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thumbs/4.jpg" afterPath="$PROJECT_DIR$/public/images/thumbs/4.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thumbs/5.jpg" afterPath="$PROJECT_DIR$/public/images/thumbs/5.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thumbs/6.jpg" afterPath="$PROJECT_DIR$/public/images/thumbs/6.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thumbs/7.jpg" afterPath="$PROJECT_DIR$/public/images/thumbs/7.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/users_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/users_helper.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/employees/register.html.erb" afterPath="$PROJECT_DIR$/app/views/employees/register.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/pages/_slideshow.erb" afterPath="$PROJECT_DIR$/app/views/pages/_slideshow.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/pages/contact.html.erb" afterPath="$PROJECT_DIR$/app/views/pages/contact.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/pages/whoweare.html.erb" afterPath="$PROJECT_DIR$/app/views/pages/whoweare.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/trainers/mailout.html.erb" afterPath="$PROJECT_DIR$/app/views/trainers/mailout.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/employees/_courseregistration.erb" afterPath="$PROJECT_DIR$/app/views/employees/_courseregistration.erb" />
     </list>
     <ignored path="coursex.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -44,34 +24,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="1.jpg" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/images/large/1.jpg">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2.jpg" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/images/large/2.jpg">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="img1.jpg" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/images/img1.jpg">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="img2.jpg" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/images/img2.jpg">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="img04.jpg" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/images/img04.jpg">
           <provider selected="true" editor-type-id="images">
@@ -113,12 +65,44 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="contact.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="contact.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/pages/contact.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="312" selection-start="386" selection-end="386" vertical-scroll-proportion="0.14956012">
+            <state line="3" column="312" selection-start="386" selection-end="386" vertical-scroll-proportion="-1.9615384">
               <folding />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="register.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/employees/register.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="0" selection-start="264" selection-end="264" vertical-scroll-proportion="-6.6538463">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_courseregistration.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/employees/_courseregistration.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="30" column="30" selection-start="843" selection-end="843" vertical-scroll-proportion="-13.269231">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="1.jpg" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/images/large/1.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="1.jpg" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/images/thumbs/1.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
@@ -139,7 +123,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/employees/_sidebar.erb" />
         <option value="$PROJECT_DIR$/app/views/employees/classes.html.erb" />
         <option value="$PROJECT_DIR$/app/views/employees/_employeesidebar.erb" />
         <option value="$PROJECT_DIR$/app/views/trainers/print.html.erb" />
@@ -155,6 +138,7 @@
         <option value="$PROJECT_DIR$/app/views/pages/_slideshow.erb" />
         <option value="$PROJECT_DIR$/app/views/pages/whoweare.html.erb" />
         <option value="$PROJECT_DIR$/app/views/pages/contact.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/employees/_courseregistration.erb" />
       </list>
     </option>
   </component>
@@ -439,6 +423,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="coursex" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="coursex" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="employees" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -803,7 +809,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21775417" sideWeight="0.21311475" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3327869" sideWeight="0.6669196" order="11" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3125" sideWeight="0.32776934" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3125" sideWeight="0.32776934" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295082" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -871,13 +877,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/application.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1449" column="15" selection-start="32522" selection-end="32522" vertical-scroll-proportion="-6.64">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/images/mydetails.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -888,30 +887,11 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/employees/_courseregistration.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="18" selection-start="831" selection-end="831" vertical-scroll-proportion="-10.346154">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/employees_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="33" column="15" selection-start="834" selection-end="834" vertical-scroll-proportion="0.0">
           <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/employees/register.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="264" selection-end="264" vertical-scroll-proportion="-10.346154">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/images/large/1.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/images/large/2.jpg">
@@ -962,9 +942,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/pages/contact.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="312" selection-start="386" selection-end="386" vertical-scroll-proportion="0.14956012">
+        <state line="3" column="312" selection-start="386" selection-end="386" vertical-scroll-proportion="-1.9615384">
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/employees/register.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="0" selection-start="264" selection-end="264" vertical-scroll-proportion="-6.6538463">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/employees/_courseregistration.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="30" selection-start="843" selection-end="843" vertical-scroll-proportion="-13.269231">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/images/large/1.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/images/thumbs/1.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
   </component>
