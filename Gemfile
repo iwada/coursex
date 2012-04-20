@@ -8,6 +8,9 @@ gem 'pdfkit'
 gem "friendly_id", "~> 4.0.1"
 gem "railroady"
 gem 'aws-sdk'
+gem 'bcrypt-ruby'
+gem 'bcrypt-ruby'
+
 
 
 
