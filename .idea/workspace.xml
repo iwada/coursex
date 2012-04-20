@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41934c2c-d224-404e-954e-c35f7923737e" name="Default" comment="">
+      <change type="DELETED" beforePath="C:\dev\rails\coursex\Gemfile.lock" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/pages/home.html.erb" afterPath="$PROJECT_DIR$/app/views/pages/home.html.erb" />
     </list>
     <ignored path="coursex.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,10 +34,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="home.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/pages/home.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="2" selection-start="25" selection-end="25" vertical-scroll-proportion="-1.3076923">
+            <state line="2" column="30" selection-start="27" selection-end="53" vertical-scroll-proportion="0.096045196">
               <folding />
             </state>
           </provider>
@@ -101,10 +102,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="0" selection-start="217" selection-end="217" vertical-scroll-proportion="0.45906433">
+            <state line="10" column="3" selection-start="181" selection-end="198" vertical-scroll-proportion="-4.92">
               <folding />
             </state>
           </provider>
@@ -141,8 +142,8 @@
         <option value="$PROJECT_DIR$/app/views/pages/whoweare.html.erb" />
         <option value="$PROJECT_DIR$/app/views/pages/contact.html.erb" />
         <option value="$PROJECT_DIR$/app/views/employees/_courseregistration.erb" />
-        <option value="$PROJECT_DIR$/app/views/pages/home.html.erb" />
         <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/app/views/pages/home.html.erb" />
       </list>
     </option>
   </component>
@@ -963,16 +964,16 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/pages/home.html.erb">
+    <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="2" selection-start="25" selection-end="25" vertical-scroll-proportion="-1.3076923">
+        <state line="10" column="3" selection-start="181" selection-end="198" vertical-scroll-proportion="-4.92">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
+    <entry file="file://$PROJECT_DIR$/app/views/pages/home.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="217" selection-end="217" vertical-scroll-proportion="0.45906433">
+        <state line="2" column="30" selection-start="27" selection-end="53" vertical-scroll-proportion="0.096045196">
           <folding />
         </state>
       </provider>
