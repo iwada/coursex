@@ -1,4 +1,11 @@
-CourseX is a Ruby on Rails Application that runs on ruby 1.9 and any compactable Rails Application server.
+Course+ is a Ruby on Rails Application that runs on ruby 1.9 and any compactable Rails Application server.
+
+Development Team
+Iwada Eja - Core Developer /Design
+Mohammed - Developer
+Aliyu - Database 
+Eedris - Documentation
+Ankit - design
 
 The Administrative account is 
 Iwada.bassey@gmail.com(Case Sensitive) and Password is dawizard
