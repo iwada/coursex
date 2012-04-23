@@ -179,15 +179,15 @@ Rails.application.config.sorcery.configure do |config|
                                                                                                 # sent.
 
     # -- brute_force_protection --
-     user.failed_logins_count_attribute_name = :failed_logins_count                  # failed logins attribute name.
+     #user.failed_logins_count_attribute_name = :failed_logins_count                  # failed logins attribute name.
 
-    user.lock_expires_at_attribute_name = :lock_expires_at                          # this field indicates whether
+    #user.lock_expires_at_attribute_name = :lock_expires_at                          # this field indicates whether
                                                                                       # user is banned and when it will
                                                                                       # be active again.
 
-     user.consecutive_login_retries_amount_limit = 2                                # how many failed logins allowed.
+     #user.consecutive_login_retries_amount_limit = 2                                # how many failed logins allowed.
 
-    user.login_lock_time_period = 30                                                # how long the user should be
+    #user.login_lock_time_period = 30                                                # how long the user should be
                                                                                       # banned. in seconds. 0 for
                                                                                       # permanent.
 

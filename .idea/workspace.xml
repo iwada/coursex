@@ -105,7 +105,7 @@
       <file leaf-file-name="sorcery.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/initializers/sorcery.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="80" selection-start="428" selection-end="428" vertical-scroll-proportion="0.12099644">
+            <state line="195" column="5" selection-start="14408" selection-end="14408" vertical-scroll-proportion="0.93950176">
               <folding />
             </state>
           </provider>
@@ -927,7 +927,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/initializers/sorcery.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="80" selection-start="428" selection-end="428" vertical-scroll-proportion="0.12099644">
+        <state line="195" column="5" selection-start="14408" selection-end="14408" vertical-scroll-proportion="0.93950176">
           <folding />
         </state>
       </provider>
