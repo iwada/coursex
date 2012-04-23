@@ -132,7 +132,7 @@ PLATFORMS
 
 DEPENDENCIES
   aws-sdk
-  bcrypt-ruby
+  bcrypt-ruby (~> 3.0.0)
   client_side_validations
   friendly_id (~> 4.0.1)
   jquery-rails (>= 1.0.12)

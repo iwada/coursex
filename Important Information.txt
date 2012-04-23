@@ -1,17 +1,19 @@
-Course+ is a Ruby on Rails Application that runs on ruby 1.9 and any compactable Rails Application server.
-
-Development Team
-Iwada Eja - Core Developer /Design
-Mohammed - Developer
-Aliyu - Database 
-Eedris - Documentation
-Ankit - design
+CourseX is a Ruby on Rails Application that runs on ruby 1.9 and any compactable Rails Application server.
 
 The Administrative account is 
 Iwada.bassey@gmail.com(Case Sensitive) and Password is dawizard
 Trainer Account
-basmo13@yahoo.co.uk and Password dawizard
+babyphatt2k@yahoo.com and Password dawizard
 employee account
-babyphatt2k@yahoo.com and password dawizard
+basmo13@gmail.com and password dawizard
 
-The application can be accessed online at coursex.heroku.com.
+The application can also  be accessed online at coursex.heroku.com
+
+Signing UP: 
+This can be done with any valid Email Address with either of the following Pins:
+5083480
+7836502
+4905205
+9425911
+2976912
+More of these can be created after logging in
