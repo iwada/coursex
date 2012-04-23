@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/thedarkone/rails-dev-boost.git
-  revision: c648d229fa981c5f9bcbd8ac6baa520582c248c6
+  revision: a995f0a3734ecf36da74dcce32ed2ba74e25c56d
   specs:
     rails-dev-boost (0.1.1)
 
@@ -132,6 +132,7 @@ PLATFORMS
 
 DEPENDENCIES
   aws-sdk
+  bcrypt-ruby
   client_side_validations
   friendly_id (~> 4.0.1)
   jquery-rails (>= 1.0.12)

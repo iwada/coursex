@@ -1,0 +1,10 @@
+CourseX is a Ruby on Rails Application that runs on ruby 1.9 and any compactable Rails Application server.
+
+The Administrative account is 
+Iwada.bassey@gmail.com(Case Sensitive) and Password is dawizard
+Trainer Account
+basmo13@yahoo.co.uk and Password dawizard
+employee account
+babyphatt2k@yahoo.com and password dawizard
+
+The application can be accessed online at coursex.heroku.com.
