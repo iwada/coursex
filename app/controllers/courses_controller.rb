@@ -9,7 +9,7 @@ class CoursesController < ApplicationController
 
   def index
     @title = "Course Listing"
-    @course =  Course.search(params[:search]).order("created_at desc").page(params[:page]).per(5)
+    @course =  Course.search(params[:search]).order("created_at desc").page(params[:page]).per(20)
   end
 
   def dashboard
