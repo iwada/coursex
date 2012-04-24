@@ -6,6 +6,8 @@
 
       <li class="nav-header">Quick Link</li>
       <li class= "<%= is_active?("dashboard")%>" data-original-title=" Takes you to the Admin Home " id="home" >  <%=link_to "Home", users_dashboard_path%> </li>
+      <li class= "<%= is_active?("index")%>" data-original-title=" Shows all Users " id="allusers" >  <%=link_to "Show All Users", users_path%> </li>
+
       <li class= "<%= is_active?("new") %>" data-original-title=" Contains Courses Related Commands " id="coursedb"><%=link_to "Course Dashboard", courses_dashboard_path%></li>
       <li class= "<%= is_active?("new") %>" data-original-title=" Contains Employee Related Commands " id="employeedb"><%=link_to "Employee Dashboard", employees_dashboard_path%></li>
       <li class= "<%= is_active?("new") %>"  data-original-title=" Contains Trainers Related Commands " id="trainerdb"><%=link_to "Trainer Dashboard", trainers_dashboard_path%></li>
@@ -39,6 +41,7 @@
         $("#acessdb").tooltip()
         $("#branchdb").tooltip()
         $("#role").tooltip()
+        $("#allusers").tooltip()
 
 
     });

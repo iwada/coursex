@@ -9,7 +9,7 @@
 
     });
 </script>
-
+ <% if @current_action != 'edit' %>
 <div class="clearfix">
   <label>Enter Access Pin</label>
   <div class="input">
@@ -20,6 +20,7 @@
     </a>
   </div>
 </div>
+    <% end %>
 
 
 <div class="clearfix">

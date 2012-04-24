@@ -6,7 +6,7 @@ class UsersController < ApplicationController
 
   def index
     @title = "User Listing"
-    @user =  User.search(params[:search]).order("email").page(params[:page]).per(3)
+    @user =  User.search(params[:search]).order("email").page(params[:page]).per(10)
   end
 
   def new
