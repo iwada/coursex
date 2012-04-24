@@ -12,12 +12,16 @@
       <li class= "<%= is_active?("new") %>" data-original-title=" Contains Branches Related Commands " id="branchdb"><%=link_to "Branch Dashboard", branches_dashboard_path%></li>
       <li class= "<%= is_active?("new") %>"data-original-title=" Contains AccessPins Related Commands " id="acessdb"><%=link_to "Access Pins Dashboard", accesspins_dashboard_path%></li>
       <li class="nav-header">Number of Courses</li>
-      <li><a href="#">1000 Compulsory Courses </a></li>
-      <li><a href="#">2000 Optional Courses</a></li>
+      <li><a href="#">Level 1 Courses  Avaliable   [ <%=level1courses %> ]  </a></li>
+      <li><a href="#">Level 2 Courses Avaliable    [ <%=level2courses %> ]  </a></li>
+      <li><a href="#">Optional Courses Avaliable      [ <%= optional %> ] </a></li>
+      <li><a href="#">Comp. Courses Avaliable            [ <%= compulsory %> ] </a></li>
       <li class="nav-header">Number of Employees</li>
-      <li><a href="#">500 Level 1 Employees  </a></li>
-      <li><a href="#">300 Level 2 Employees</a></li>
-      <li><a href="#">500 Level 3 Employee</a></li>
+      <li><a href="#">Level 1 Employees  Avaliable   [ <%=level1employees %> ]  </a></li>
+
+      <li><a href="#">Level 2 Employees Avaliable    [ <%=level2employees %> ]  </a></li>
+      <li><a href="#">Level 3 Employees Avaliable    [ <%=level3employees %> ]  </a></li>
+
       <li class="nav-header">Number of Trainers</li>
       <li><a href="#">200 Trainers taking Compulsory courses </a></li>
       <li><a href="#">200 Trainers taking Optional courses </a></li>

@@ -16,4 +16,17 @@ module EmployeesHelper
     return "Register"
   end
 
+  def level1employees
+    @level1 = Employee.find_all_by_level(1).count
+  end
+
+  def level2employees
+    @level1 = Employee.find_all_by_level(2).count
+  end
+
+  def level3employees
+    @level1 = Employee.find_all_by_level(2).count
+  end
+
+
 end

@@ -17,4 +17,12 @@ module BranchesHelper
   def most_active
     @most_active = Branch.first.name
   end
+
+  def leastactive
+    @least_active = Branch.last.name
+  end
+
+  def totalBranches
+    @total = Branch.count
+  end
 end

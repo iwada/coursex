@@ -10,6 +10,7 @@ gem "railroady"
 gem 'aws-sdk'
 
 gem 'bcrypt-ruby', "~> 3.0.0"
+gem 'faker', '0.3.1'
 
 
 
