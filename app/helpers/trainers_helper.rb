@@ -1,7 +1,7 @@
 module TrainersHelper
 
   def handledcourses
- return  @courseshandled = Trainer.find_by_email(current_user.email).handle
+ return  @courseshandled = Trainer.find_by_email(current_user.email)
   end
 
   def current_trainer
